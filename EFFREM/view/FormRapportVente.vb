@@ -12,7 +12,7 @@
     End Sub
     Private Sub chargementElementDate()
         Cursor = Cursors.WaitCursor
-        TransactionControler.ChargementElementDate(DatagridProduit, dateDu.Value.ToString, DateAu.Value.ToString())
+        TransactionControler.ChargementElementDate(DatagridProduit, dateDu.Value.ToString("yyyy/MM/dd"), DateAu.Value.ToString("yyyy/MM/dd"))
         Cursor = Cursors.Default
     End Sub
 

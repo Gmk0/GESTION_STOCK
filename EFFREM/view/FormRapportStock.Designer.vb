@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormRapportStock
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,12 @@ Partial Class FormRapportStock
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -46,7 +45,6 @@ Partial Class FormRapportStock
         Me.Guna2GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2GroupBox1.BorderRadius = 12
-        Me.Guna2GroupBox1.Controls.Add(Me.Label5)
         Me.Guna2GroupBox1.Controls.Add(Me.Label3)
         Me.Guna2GroupBox1.Controls.Add(Me.Guna2ComboBox1)
         Me.Guna2GroupBox1.Controls.Add(Me.Label2)
@@ -63,18 +61,6 @@ Partial Class FormRapportStock
         Me.Guna2GroupBox1.ShadowDecoration.Parent = Me.Guna2GroupBox1
         Me.Guna2GroupBox1.Size = New System.Drawing.Size(1026, 160)
         Me.Guna2GroupBox1.TabIndex = 17
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.White
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 13.0!)
-        Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(313, 121)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(36, 25)
-        Me.Label5.TabIndex = 21
-        Me.Label5.Text = "AU"
         '
         'Label3
         '
@@ -100,7 +86,7 @@ Partial Class FormRapportStock
         Me.Guna2ComboBox1.FormattingEnabled = True
         Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
         Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Items.AddRange(New Object() {"50", "100", "200", "500", "1000", "10000", "100000"})
+        Me.Guna2ComboBox1.Items.AddRange(New Object() {"50", "100", "200", "500", "1000", "10000", "100000", "500000", "1000000"})
         Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
         Me.Guna2ComboBox1.Location = New System.Drawing.Point(87, 101)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
@@ -169,9 +155,9 @@ Partial Class FormRapportStock
         Me.IconButton2.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton2.FlatAppearance.BorderSize = 0
         Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton2.ForeColor = System.Drawing.Color.White
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.NotesMedical
+        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Sync
         Me.IconButton2.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton2.IconSize = 40
@@ -188,9 +174,9 @@ Partial Class FormRapportStock
         Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton1.ForeColor = System.Drawing.Color.White
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Search
         Me.IconButton1.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton1.IconSize = 40
@@ -305,5 +291,4 @@ Partial Class FormRapportStock
     Friend WithEvents Label3 As Label
     Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents LabelC As Label
-    Friend WithEvents Label5 As Label
 End Class

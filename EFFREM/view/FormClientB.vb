@@ -31,6 +31,7 @@
         btnReset.Visible = False
         btnDelete.Visible = True
         btnModifier.Visible = True
+        IconButton1.Visible = True
 
     End Sub
     Public Sub visibleNot()
@@ -38,6 +39,7 @@
         btnReset.Visible = True
         btnDelete.Visible = False
         btnModifier.Visible = False
+        IconButton1.Visible = False
     End Sub
     Public Sub chargementElement()
         controlCommune.chargementVilleNum(comboVille)
@@ -79,5 +81,9 @@
 
     Private Sub comboVille_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboVille.SelectedIndexChanged
         chargementCommune()
+    End Sub
+
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+
     End Sub
 End Class

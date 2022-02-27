@@ -71,9 +71,8 @@
         ChargemntElement()
     End Sub
 
-    Private Sub IconButton3_Click(sender As Object, e As EventArgs) 
-        Dim formC As New FormCategorie
-        formC.ShowDialog()
+    Private Sub IconButton3_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub DatagridProduit_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DatagridProduit.CellContentClick

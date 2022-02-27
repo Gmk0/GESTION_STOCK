@@ -108,18 +108,21 @@
         btnReset.Visible = False
         btnDelete.Visible = True
         btnModifier.Visible = True
+        IconButton2.Visible = True
     End Sub
     Public Sub visibleButtonCommune()
         btnAjouterC.Visible = False
         btnResetC.Visible = False
         btnDeleteC.Visible = True
         btnModicierC.Visible = True
+        IconButton2.Visible = True
     End Sub
     Public Sub visibleButtonNot()
         btnAjouterC.Visible = True
         btnResetC.Visible = True
         btnDeleteC.Visible = False
         btnModicierC.Visible = False
+        IconButton1.Visible = False
     End Sub
 
     Public Sub visibleNot()
@@ -127,6 +130,7 @@
         btnReset.Visible = True
         btnDelete.Visible = False
         btnModifier.Visible = False
+        IconButton2.Visible = False
     End Sub
 
     Private Sub btnModicierC_Click(sender As Object, e As EventArgs) Handles btnModicierC.Click
@@ -159,11 +163,19 @@
         visibleButtonNot()
     End Sub
 
-    Private Sub IconButton1_Click_1(sender As Object, e As EventArgs) Handles IconButton1.Click
+    Private Sub IconButton1_Click_1(sender As Object, e As EventArgs)
         visibleButtonNot()
         IconButton1.Visible = False
         boxCommune.ResetText()
 
 
+    End Sub
+
+    Private Sub IconButton2_Click_1(sender As Object, e As EventArgs) Handles IconButton2.Click
+        visibleNot()
+    End Sub
+
+    Private Sub IconButton1_Click_2(sender As Object, e As EventArgs) Handles IconButton1.Click
+        visibleButtonNot()
     End Sub
 End Class

@@ -60,6 +60,12 @@
         datagrid.DataSource = table
     End Sub
 
+    Public Sub chargementProduit(ByVal rechereche As String, ByVal datagrid As DataGridView)
 
+        table = stockManager.ShowProduitRecherche(rechereche)
+        datagrid.DataSource = table
+
+
+    End Sub
 
 End Class

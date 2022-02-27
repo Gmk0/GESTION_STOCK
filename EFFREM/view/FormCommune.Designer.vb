@@ -22,12 +22,12 @@ Partial Class FormCommune
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.btnDelete = New FontAwesome.Sharp.IconButton()
         Me.DatagridVille = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -48,6 +48,7 @@ Partial Class FormCommune
         Me.btnAjouterC = New FontAwesome.Sharp.IconButton()
         Me.btnResetC = New FontAwesome.Sharp.IconButton()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.DatagridVille, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,6 +59,7 @@ Partial Class FormCommune
         'Guna2GroupBox1
         '
         Me.Guna2GroupBox1.BorderRadius = 12
+        Me.Guna2GroupBox1.Controls.Add(Me.IconButton2)
         Me.Guna2GroupBox1.Controls.Add(Me.btnDelete)
         Me.Guna2GroupBox1.Controls.Add(Me.DatagridVille)
         Me.Guna2GroupBox1.Controls.Add(Me.btnModifier)
@@ -79,13 +81,13 @@ Partial Class FormCommune
         Me.btnDelete.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnDelete.FlatAppearance.BorderSize = 0
         Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelete.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
         Me.btnDelete.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnDelete.IconSize = 40
-        Me.btnDelete.Location = New System.Drawing.Point(268, 145)
+        Me.btnDelete.Location = New System.Drawing.Point(241, 142)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(137, 45)
         Me.btnDelete.TabIndex = 14
@@ -96,8 +98,8 @@ Partial Class FormCommune
         '
         'DatagridVille
         '
-        DataGridViewCellStyle19.BackColor = System.Drawing.Color.White
-        Me.DatagridVille.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        Me.DatagridVille.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
         Me.DatagridVille.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -106,23 +108,23 @@ Partial Class FormCommune
         Me.DatagridVille.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DatagridVille.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DatagridVille.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle20.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DatagridVille.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DatagridVille.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.DatagridVille.ColumnHeadersHeight = 20
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle21.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DatagridVille.DefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DatagridVille.DefaultCellStyle = DataGridViewCellStyle9
         Me.DatagridVille.EnableHeadersVisualStyles = False
         Me.DatagridVille.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DatagridVille.Location = New System.Drawing.Point(20, 245)
@@ -159,13 +161,13 @@ Partial Class FormCommune
         Me.btnModifier.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnModifier.FlatAppearance.BorderSize = 0
         Me.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModifier.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnModifier.ForeColor = System.Drawing.Color.White
-        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.Pen
         Me.btnModifier.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnModifier.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnModifier.IconSize = 40
-        Me.btnModifier.Location = New System.Drawing.Point(108, 145)
+        Me.btnModifier.Location = New System.Drawing.Point(81, 142)
         Me.btnModifier.Name = "btnModifier"
         Me.btnModifier.Size = New System.Drawing.Size(137, 45)
         Me.btnModifier.TabIndex = 12
@@ -190,13 +192,13 @@ Partial Class FormCommune
         Me.btnAjouter.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnAjouter.FlatAppearance.BorderSize = 0
         Me.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAjouter.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnAjouter.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnAjouter.ForeColor = System.Drawing.Color.White
         Me.btnAjouter.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnAjouter.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnAjouter.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnAjouter.IconSize = 40
-        Me.btnAjouter.Location = New System.Drawing.Point(108, 145)
+        Me.btnAjouter.Location = New System.Drawing.Point(81, 142)
         Me.btnAjouter.Name = "btnAjouter"
         Me.btnAjouter.Size = New System.Drawing.Size(137, 45)
         Me.btnAjouter.TabIndex = 2
@@ -209,13 +211,13 @@ Partial Class FormCommune
         Me.btnReset.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnReset.FlatAppearance.BorderSize = 0
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnReset.ForeColor = System.Drawing.Color.White
         Me.btnReset.IconChar = FontAwesome.Sharp.IconChar.Reply
         Me.btnReset.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnReset.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnReset.IconSize = 40
-        Me.btnReset.Location = New System.Drawing.Point(268, 145)
+        Me.btnReset.Location = New System.Drawing.Point(241, 142)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(123, 45)
         Me.btnReset.TabIndex = 4
@@ -277,7 +279,7 @@ Partial Class FormCommune
         Me.btnDeleteC.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnDeleteC.FlatAppearance.BorderSize = 0
         Me.btnDeleteC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDeleteC.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnDeleteC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnDeleteC.ForeColor = System.Drawing.Color.White
         Me.btnDeleteC.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnDeleteC.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -319,8 +321,8 @@ Partial Class FormCommune
         '
         'DatagridCom
         '
-        DataGridViewCellStyle22.BackColor = System.Drawing.Color.White
-        Me.DatagridCom.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
+        Me.DatagridCom.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
         Me.DatagridCom.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -329,23 +331,23 @@ Partial Class FormCommune
         Me.DatagridCom.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DatagridCom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DatagridCom.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DatagridCom.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DatagridCom.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.DatagridCom.ColumnHeadersHeight = 20
-        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle24.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle24.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DatagridCom.DefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DatagridCom.DefaultCellStyle = DataGridViewCellStyle12
         Me.DatagridCom.EnableHeadersVisualStyles = False
         Me.DatagridCom.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DatagridCom.Location = New System.Drawing.Point(21, 245)
@@ -382,7 +384,7 @@ Partial Class FormCommune
         Me.btnModicierC.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnModicierC.FlatAppearance.BorderSize = 0
         Me.btnModicierC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModicierC.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnModicierC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnModicierC.ForeColor = System.Drawing.Color.White
         Me.btnModicierC.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnModicierC.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -467,7 +469,7 @@ Partial Class FormCommune
         Me.btnAjouterC.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnAjouterC.FlatAppearance.BorderSize = 0
         Me.btnAjouterC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAjouterC.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnAjouterC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnAjouterC.ForeColor = System.Drawing.Color.White
         Me.btnAjouterC.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnAjouterC.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -486,7 +488,7 @@ Partial Class FormCommune
         Me.btnResetC.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnResetC.FlatAppearance.BorderSize = 0
         Me.btnResetC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnResetC.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnResetC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnResetC.ForeColor = System.Drawing.Color.White
         Me.btnResetC.IconChar = FontAwesome.Sharp.IconChar.Reply
         Me.btnResetC.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -512,21 +514,40 @@ Partial Class FormCommune
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "LOCALISATION"
         '
+        'IconButton2
+        '
+        Me.IconButton2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton2.FlatAppearance.BorderSize = 0
+        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.IconButton2.ForeColor = System.Drawing.Color.White
+        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Redo
+        Me.IconButton2.IconColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton2.IconSize = 35
+        Me.IconButton2.Location = New System.Drawing.Point(411, 142)
+        Me.IconButton2.Name = "IconButton2"
+        Me.IconButton2.Size = New System.Drawing.Size(53, 45)
+        Me.IconButton2.TabIndex = 19
+        Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton2.UseVisualStyleBackColor = False
+        Me.IconButton2.Visible = False
+        '
         'IconButton1
         '
         Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton1.ForeColor = System.Drawing.Color.White
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Redo
         Me.IconButton1.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 40
-        Me.IconButton1.Location = New System.Drawing.Point(442, 149)
+        Me.IconButton1.IconSize = 35
+        Me.IconButton1.Location = New System.Drawing.Point(437, 149)
         Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(66, 41)
-        Me.IconButton1.TabIndex = 16
+        Me.IconButton1.Size = New System.Drawing.Size(53, 45)
+        Me.IconButton1.TabIndex = 20
         Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton1.UseVisualStyleBackColor = False
         Me.IconButton1.Visible = False
@@ -572,5 +593,6 @@ Partial Class FormCommune
     Friend WithEvents boxVilleNum As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnDelete As FontAwesome.Sharp.IconButton
     Friend WithEvents btnDeleteC As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
 End Class

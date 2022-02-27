@@ -110,4 +110,8 @@
         boxMontant.Clear()
         visibleNot()
     End Sub
+
+    Private Sub DatagridCom_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DatagridCom.CellContentClick
+
+    End Sub
 End Class

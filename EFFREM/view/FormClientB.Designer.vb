@@ -23,6 +23,8 @@ Partial Class FormClientB
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.boxCate = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.comboVille = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.boxC = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnDelete = New FontAwesome.Sharp.IconButton()
         Me.btnModifier = New FontAwesome.Sharp.IconButton()
@@ -35,8 +37,7 @@ Partial Class FormClientB
         Me.btnReset = New FontAwesome.Sharp.IconButton()
         Me.boxName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.comboVille = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.boxCate.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,6 +46,7 @@ Partial Class FormClientB
         Me.boxCate.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.boxCate.BorderRadius = 12
+        Me.boxCate.Controls.Add(Me.IconButton1)
         Me.boxCate.Controls.Add(Me.comboVille)
         Me.boxCate.Controls.Add(Me.Label1)
         Me.boxCate.Controls.Add(Me.boxC)
@@ -66,6 +68,36 @@ Partial Class FormClientB
         Me.boxCate.ShadowDecoration.Parent = Me.boxCate
         Me.boxCate.Size = New System.Drawing.Size(571, 358)
         Me.boxCate.TabIndex = 9
+        '
+        'comboVille
+        '
+        Me.comboVille.BackColor = System.Drawing.Color.Transparent
+        Me.comboVille.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.comboVille.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.comboVille.FocusedColor = System.Drawing.Color.Empty
+        Me.comboVille.FocusedState.Parent = Me.comboVille
+        Me.comboVille.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.comboVille.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.comboVille.FormattingEnabled = True
+        Me.comboVille.HoverState.Parent = Me.comboVille
+        Me.comboVille.ItemHeight = 30
+        Me.comboVille.ItemsAppearance.Parent = Me.comboVille
+        Me.comboVille.Location = New System.Drawing.Point(152, 92)
+        Me.comboVille.Name = "comboVille"
+        Me.comboVille.ShadowDecoration.Parent = Me.comboVille
+        Me.comboVille.Size = New System.Drawing.Size(260, 36)
+        Me.comboVille.TabIndex = 16
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(72, 113)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(35, 15)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "VILLE"
         '
         'boxC
         '
@@ -97,13 +129,13 @@ Partial Class FormClientB
         Me.btnDelete.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnDelete.FlatAppearance.BorderSize = 0
         Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelete.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
         Me.btnDelete.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnDelete.IconSize = 40
-        Me.btnDelete.Location = New System.Drawing.Point(312, 272)
+        Me.btnDelete.Location = New System.Drawing.Point(284, 272)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(158, 45)
         Me.btnDelete.TabIndex = 13
@@ -117,13 +149,13 @@ Partial Class FormClientB
         Me.btnModifier.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnModifier.FlatAppearance.BorderSize = 0
         Me.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModifier.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnModifier.ForeColor = System.Drawing.Color.White
-        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.Pen
         Me.btnModifier.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnModifier.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnModifier.IconSize = 40
-        Me.btnModifier.Location = New System.Drawing.Point(120, 272)
+        Me.btnModifier.Location = New System.Drawing.Point(90, 272)
         Me.btnModifier.Name = "btnModifier"
         Me.btnModifier.Size = New System.Drawing.Size(158, 45)
         Me.btnModifier.TabIndex = 12
@@ -213,13 +245,13 @@ Partial Class FormClientB
         Me.btnAjouter.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnAjouter.FlatAppearance.BorderSize = 0
         Me.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAjouter.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnAjouter.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnAjouter.ForeColor = System.Drawing.Color.White
         Me.btnAjouter.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnAjouter.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnAjouter.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnAjouter.IconSize = 40
-        Me.btnAjouter.Location = New System.Drawing.Point(120, 272)
+        Me.btnAjouter.Location = New System.Drawing.Point(90, 272)
         Me.btnAjouter.Name = "btnAjouter"
         Me.btnAjouter.Size = New System.Drawing.Size(158, 45)
         Me.btnAjouter.TabIndex = 2
@@ -232,13 +264,13 @@ Partial Class FormClientB
         Me.btnReset.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnReset.FlatAppearance.BorderSize = 0
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnReset.ForeColor = System.Drawing.Color.White
         Me.btnReset.IconChar = FontAwesome.Sharp.IconChar.Reply
         Me.btnReset.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnReset.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnReset.IconSize = 40
-        Me.btnReset.Location = New System.Drawing.Point(312, 272)
+        Me.btnReset.Location = New System.Drawing.Point(284, 272)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(156, 45)
         Me.btnReset.TabIndex = 4
@@ -282,35 +314,24 @@ Partial Class FormClientB
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "CLIENT"
         '
-        'Label1
+        'IconButton1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(72, 113)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 15)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "VILLE"
-        '
-        'comboVille
-        '
-        Me.comboVille.BackColor = System.Drawing.Color.Transparent
-        Me.comboVille.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.comboVille.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.comboVille.FocusedColor = System.Drawing.Color.Empty
-        Me.comboVille.FocusedState.Parent = Me.comboVille
-        Me.comboVille.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.comboVille.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.comboVille.FormattingEnabled = True
-        Me.comboVille.HoverState.Parent = Me.comboVille
-        Me.comboVille.ItemHeight = 30
-        Me.comboVille.ItemsAppearance.Parent = Me.comboVille
-        Me.comboVille.Location = New System.Drawing.Point(152, 92)
-        Me.comboVille.Name = "comboVille"
-        Me.comboVille.ShadowDecoration.Parent = Me.comboVille
-        Me.comboVille.Size = New System.Drawing.Size(260, 36)
-        Me.comboVille.TabIndex = 16
+        Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton1.FlatAppearance.BorderSize = 0
+        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.IconButton1.ForeColor = System.Drawing.Color.White
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Redo
+        Me.IconButton1.IconColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.IconSize = 35
+        Me.IconButton1.Location = New System.Drawing.Point(472, 272)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Size = New System.Drawing.Size(53, 45)
+        Me.IconButton1.TabIndex = 19
+        Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton1.UseVisualStyleBackColor = False
+        Me.IconButton1.Visible = False
         '
         'FormClientB
         '
@@ -344,4 +365,5 @@ Partial Class FormClientB
     Friend WithEvents boxC As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents comboVille As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
 End Class

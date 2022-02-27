@@ -164,9 +164,9 @@ Partial Class FormTransaction
         Me.IconButton4.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton4.FlatAppearance.BorderSize = 0
         Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton4.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton4.ForeColor = System.Drawing.Color.White
-        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.RedoAlt
         Me.IconButton4.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton4.IconSize = 40
@@ -198,7 +198,7 @@ Partial Class FormTransaction
         Me.IconButton3.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton3.FlatAppearance.BorderSize = 0
         Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton3.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton3.ForeColor = System.Drawing.Color.White
         Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.IconButton3.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -365,7 +365,7 @@ Partial Class FormTransaction
         Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton1.ForeColor = System.Drawing.Color.White
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.IconButton1.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -482,7 +482,7 @@ Partial Class FormTransaction
         Me.IconButton2.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton2.FlatAppearance.BorderSize = 0
         Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton2.ForeColor = System.Drawing.Color.White
         Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.IconButton2.IconColor = System.Drawing.SystemColors.ButtonHighlight

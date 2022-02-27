@@ -9,7 +9,7 @@
     Private Sub chargementElement()
         Cursor = Cursors.WaitCursor
         controlStock.ShowStock(DatagridProduit, Guna2ComboBox1.Text)
-        Label5.Text = ""
+
         Cursor = Cursors.Default
     End Sub
 

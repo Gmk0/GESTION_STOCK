@@ -9,6 +9,7 @@
         btnReset.Visible = False
         btnDelete.Visible = True
         btnModifier.Visible = True
+        IconButton1.Visible = True
 
     End Sub
     Public Sub visibleNot()
@@ -16,6 +17,7 @@
         btnReset.Visible = True
         btnDelete.Visible = False
         btnModifier.Visible = False
+        IconButton1.Visible = False
     End Sub
 
     Private Sub btnAjouter_Click(sender As Object, e As EventArgs) Handles btnAjouter.Click
@@ -68,5 +70,10 @@
 
     Private Sub comboCategorie_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboCategorie.SelectedIndexChanged
         charmentIdCateg()
+    End Sub
+
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+        visibleNot()
+
     End Sub
 End Class

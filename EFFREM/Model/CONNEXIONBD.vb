@@ -4,7 +4,7 @@
 
 Public Class CONNEXIONBD
 
-    Dim connection As New SqlConnection("Data Source=GMK\GMK1;Initial Catalog=TP_LangProg3_2022;Integrated Security=True;Connect Timeout=600")
+    Dim connection As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\dd\TP_LangProg3_2022.mdf;Integrated Security=True;Connect Timeout=30")
 
     ReadOnly Property GetConnection() As SqlConnection
         Get

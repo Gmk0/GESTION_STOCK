@@ -55,7 +55,7 @@ Partial Class FormStock
         Me.IconButton2.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton2.FlatAppearance.BorderSize = 0
         Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton2.ForeColor = System.Drawing.Color.White
         Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.IconButton2.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -182,13 +182,13 @@ Partial Class FormStock
         Me.IconButton4.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton4.FlatAppearance.BorderSize = 0
         Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton4.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton4.ForeColor = System.Drawing.Color.White
-        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Redo
         Me.IconButton4.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton4.IconSize = 40
-        Me.IconButton4.Location = New System.Drawing.Point(822, 99)
+        Me.IconButton4.Location = New System.Drawing.Point(563, 142)
         Me.IconButton4.Name = "IconButton4"
         Me.IconButton4.Size = New System.Drawing.Size(189, 45)
         Me.IconButton4.TabIndex = 31
@@ -200,9 +200,10 @@ Partial Class FormStock
         '
         Me.boxDate.CheckedState.Parent = Me.boxDate
         Me.boxDate.FillColor = System.Drawing.Color.Transparent
+        Me.boxDate.ForeColor = System.Drawing.Color.Black
         Me.boxDate.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.boxDate.HoverState.Parent = Me.boxDate
-        Me.boxDate.Location = New System.Drawing.Point(515, 9)
+        Me.boxDate.Location = New System.Drawing.Point(576, 9)
         Me.boxDate.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.boxDate.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.boxDate.Name = "boxDate"
@@ -217,11 +218,12 @@ Partial Class FormStock
         Me.Label2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(15, 74)
+        Me.Label2.Location = New System.Drawing.Point(828, 26)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(68, 19)
         Me.Label2.TabIndex = 28
         Me.Label2.Text = "IDProduit"
+        Me.Label2.Visible = False
         '
         'boxId
         '
@@ -238,7 +240,7 @@ Partial Class FormStock
         Me.boxId.ForeColor = System.Drawing.Color.Black
         Me.boxId.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.boxId.HoverState.Parent = Me.boxId
-        Me.boxId.Location = New System.Drawing.Point(99, 61)
+        Me.boxId.Location = New System.Drawing.Point(912, 13)
         Me.boxId.Name = "boxId"
         Me.boxId.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.boxId.PlaceholderText = ""
@@ -247,6 +249,7 @@ Partial Class FormStock
         Me.boxId.ShadowDecoration.Parent = Me.boxId
         Me.boxId.Size = New System.Drawing.Size(208, 32)
         Me.boxId.TabIndex = 27
+        Me.boxId.Visible = False
         '
         'Label6
         '
@@ -254,7 +257,7 @@ Partial Class FormStock
         Me.Label6.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(15, 108)
+        Me.Label6.Location = New System.Drawing.Point(15, 74)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(33, 19)
         Me.Label6.TabIndex = 26
@@ -266,7 +269,7 @@ Partial Class FormStock
         Me.Label5.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(431, 99)
+        Me.Label5.Location = New System.Drawing.Point(443, 82)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(75, 19)
         Me.Label5.TabIndex = 25
@@ -287,7 +290,7 @@ Partial Class FormStock
         Me.boxMontant.ForeColor = System.Drawing.Color.Black
         Me.boxMontant.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.boxMontant.HoverState.Parent = Me.boxMontant
-        Me.boxMontant.Location = New System.Drawing.Point(515, 86)
+        Me.boxMontant.Location = New System.Drawing.Point(576, 61)
         Me.boxMontant.Name = "boxMontant"
         Me.boxMontant.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.boxMontant.PlaceholderText = ""
@@ -311,13 +314,13 @@ Partial Class FormStock
         Me.boxQte.ForeColor = System.Drawing.Color.Black
         Me.boxQte.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.boxQte.HoverState.Parent = Me.boxQte
-        Me.boxQte.Location = New System.Drawing.Point(99, 99)
+        Me.boxQte.Location = New System.Drawing.Point(99, 65)
         Me.boxQte.Name = "boxQte"
         Me.boxQte.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.boxQte.PlaceholderText = ""
         Me.boxQte.SelectedText = ""
         Me.boxQte.ShadowDecoration.Parent = Me.boxQte
-        Me.boxQte.Size = New System.Drawing.Size(208, 28)
+        Me.boxQte.Size = New System.Drawing.Size(302, 36)
         Me.boxQte.TabIndex = 19
         '
         'Label1
@@ -326,7 +329,7 @@ Partial Class FormStock
         Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(422, 26)
+        Me.Label1.Location = New System.Drawing.Point(443, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(41, 19)
         Me.Label1.TabIndex = 18
@@ -368,13 +371,13 @@ Partial Class FormStock
         Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton1.ForeColor = System.Drawing.Color.White
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.IconButton1.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton1.IconSize = 40
-        Me.IconButton1.Location = New System.Drawing.Point(822, 9)
+        Me.IconButton1.Location = New System.Drawing.Point(338, 142)
         Me.IconButton1.Name = "IconButton1"
         Me.IconButton1.Size = New System.Drawing.Size(189, 45)
         Me.IconButton1.TabIndex = 2
@@ -388,7 +391,7 @@ Partial Class FormStock
         Me.IconButton3.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton3.FlatAppearance.BorderSize = 0
         Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton3.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton3.ForeColor = System.Drawing.Color.White
         Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.Trash
         Me.IconButton3.IconColor = System.Drawing.SystemColors.ButtonHighlight

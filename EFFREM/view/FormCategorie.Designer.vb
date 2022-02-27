@@ -22,9 +22,9 @@ Partial Class FormCategorie
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.btnModifier = New FontAwesome.Sharp.IconButton()
         Me.btnAjouter = New FontAwesome.Sharp.IconButton()
@@ -33,6 +33,7 @@ Partial Class FormCategorie
         Me.LabelProd = New System.Windows.Forms.Label()
         Me.boxCategorie = New Guna.UI2.WinForms.Guna2TextBox()
         Me.DatagridCategorie = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.DatagridCategorie, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,6 +43,7 @@ Partial Class FormCategorie
         Me.Guna2GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2GroupBox1.BorderRadius = 12
+        Me.Guna2GroupBox1.Controls.Add(Me.IconButton1)
         Me.Guna2GroupBox1.Controls.Add(Me.btnModifier)
         Me.Guna2GroupBox1.Controls.Add(Me.btnAjouter)
         Me.Guna2GroupBox1.Controls.Add(Me.btnDelete)
@@ -54,7 +56,7 @@ Partial Class FormCategorie
         Me.Guna2GroupBox1.Location = New System.Drawing.Point(58, 46)
         Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
         Me.Guna2GroupBox1.ShadowDecoration.Parent = Me.Guna2GroupBox1
-        Me.Guna2GroupBox1.Size = New System.Drawing.Size(805, 158)
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(805, 178)
         Me.Guna2GroupBox1.TabIndex = 11
         '
         'btnModifier
@@ -62,13 +64,13 @@ Partial Class FormCategorie
         Me.btnModifier.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnModifier.FlatAppearance.BorderSize = 0
         Me.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModifier.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnModifier.ForeColor = System.Drawing.Color.White
-        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.Pen
         Me.btnModifier.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnModifier.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnModifier.IconSize = 40
-        Me.btnModifier.Location = New System.Drawing.Point(526, 11)
+        Me.btnModifier.Location = New System.Drawing.Point(159, 97)
         Me.btnModifier.Name = "btnModifier"
         Me.btnModifier.Size = New System.Drawing.Size(158, 45)
         Me.btnModifier.TabIndex = 17
@@ -82,13 +84,13 @@ Partial Class FormCategorie
         Me.btnAjouter.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnAjouter.FlatAppearance.BorderSize = 0
         Me.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAjouter.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnAjouter.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnAjouter.ForeColor = System.Drawing.Color.White
         Me.btnAjouter.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnAjouter.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnAjouter.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnAjouter.IconSize = 40
-        Me.btnAjouter.Location = New System.Drawing.Point(526, 11)
+        Me.btnAjouter.Location = New System.Drawing.Point(161, 97)
         Me.btnAjouter.Name = "btnAjouter"
         Me.btnAjouter.Size = New System.Drawing.Size(158, 45)
         Me.btnAjouter.TabIndex = 16
@@ -101,13 +103,13 @@ Partial Class FormCategorie
         Me.btnDelete.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnDelete.FlatAppearance.BorderSize = 0
         Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelete.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
         Me.btnDelete.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnDelete.IconSize = 40
-        Me.btnDelete.Location = New System.Drawing.Point(526, 80)
+        Me.btnDelete.Location = New System.Drawing.Point(356, 97)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(158, 45)
         Me.btnDelete.TabIndex = 15
@@ -121,13 +123,13 @@ Partial Class FormCategorie
         Me.btnReset.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnReset.FlatAppearance.BorderSize = 0
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnReset.ForeColor = System.Drawing.Color.White
         Me.btnReset.IconChar = FontAwesome.Sharp.IconChar.Reply
         Me.btnReset.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnReset.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnReset.IconSize = 40
-        Me.btnReset.Location = New System.Drawing.Point(526, 80)
+        Me.btnReset.Location = New System.Drawing.Point(356, 97)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(156, 45)
         Me.btnReset.TabIndex = 14
@@ -140,7 +142,7 @@ Partial Class FormCategorie
         Me.LabelProd.AutoSize = True
         Me.LabelProd.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LabelProd.ForeColor = System.Drawing.Color.Black
-        Me.LabelProd.Location = New System.Drawing.Point(25, 41)
+        Me.LabelProd.Location = New System.Drawing.Point(121, 25)
         Me.LabelProd.Name = "LabelProd"
         Me.LabelProd.Size = New System.Drawing.Size(67, 15)
         Me.LabelProd.TabIndex = 5
@@ -161,7 +163,7 @@ Partial Class FormCategorie
         Me.boxCategorie.ForeColor = System.Drawing.Color.Black
         Me.boxCategorie.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.boxCategorie.HoverState.Parent = Me.boxCategorie
-        Me.boxCategorie.Location = New System.Drawing.Point(107, 20)
+        Me.boxCategorie.Location = New System.Drawing.Point(203, 13)
         Me.boxCategorie.Name = "boxCategorie"
         Me.boxCategorie.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.boxCategorie.PlaceholderText = ""
@@ -175,8 +177,8 @@ Partial Class FormCategorie
         Me.DatagridCategorie.AllowUserToAddRows = False
         Me.DatagridCategorie.AllowUserToDeleteRows = False
         Me.DatagridCategorie.AllowUserToResizeColumns = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.DatagridCategorie.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.DatagridCategorie.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DatagridCategorie.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -185,30 +187,30 @@ Partial Class FormCategorie
         Me.DatagridCategorie.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DatagridCategorie.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DatagridCategorie.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DatagridCategorie.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DatagridCategorie.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DatagridCategorie.ColumnHeadersHeight = 25
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DatagridCategorie.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DatagridCategorie.DefaultCellStyle = DataGridViewCellStyle6
         Me.DatagridCategorie.EnableHeadersVisualStyles = False
         Me.DatagridCategorie.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DatagridCategorie.Location = New System.Drawing.Point(58, 227)
+        Me.DatagridCategorie.Location = New System.Drawing.Point(58, 250)
         Me.DatagridCategorie.Name = "DatagridCategorie"
         Me.DatagridCategorie.RowHeadersVisible = False
         Me.DatagridCategorie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DatagridCategorie.Size = New System.Drawing.Size(805, 230)
+        Me.DatagridCategorie.Size = New System.Drawing.Size(805, 207)
         Me.DatagridCategorie.TabIndex = 16
         Me.DatagridCategorie.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.DatagridCategorie.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -232,6 +234,25 @@ Partial Class FormCategorie
         Me.DatagridCategorie.ThemeStyle.RowsStyle.Height = 22
         Me.DatagridCategorie.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DatagridCategorie.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'IconButton1
+        '
+        Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton1.FlatAppearance.BorderSize = 0
+        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.IconButton1.ForeColor = System.Drawing.Color.White
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Redo
+        Me.IconButton1.IconColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.IconSize = 35
+        Me.IconButton1.Location = New System.Drawing.Point(563, 97)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Size = New System.Drawing.Size(53, 45)
+        Me.IconButton1.TabIndex = 18
+        Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton1.UseVisualStyleBackColor = False
+        Me.IconButton1.Visible = False
         '
         'FormCategorie
         '
@@ -258,4 +279,5 @@ Partial Class FormCategorie
     Friend WithEvents btnModifier As FontAwesome.Sharp.IconButton
     Friend WithEvents btnAjouter As FontAwesome.Sharp.IconButton
     Friend WithEvents DatagridCategorie As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
 End Class

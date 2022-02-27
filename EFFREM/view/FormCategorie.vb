@@ -59,6 +59,7 @@
         btnReset.Visible = False
         btnDelete.Visible = True
         btnModifier.Visible = True
+        IconButton1.Visible = True
 
     End Sub
     Public Sub visibleNot()
@@ -66,6 +67,11 @@
         btnReset.Visible = True
         btnDelete.Visible = False
         btnModifier.Visible = False
+        IconButton1.Visible = False
     End Sub
 
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+        visibleNot()
+        boxCategorie.Clear()
+    End Sub
 End Class

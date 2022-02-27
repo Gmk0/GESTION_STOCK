@@ -87,4 +87,20 @@ Public Class StockManager
         End Try
 
     End Function
+    Public Function ShowProduitRecherche(ByVal produit As String) As DataTable
+
+        Try
+            requete = "SELECT * FROM histoStockTot where Produit LIKE '%" + produit + "%'"
+            command = New SqlCommand(requete, GetConnection)
+            adapter = New SqlDataAdapter(command)
+            table = New DataTable()
+            adapter.Fill(table)
+            Return table
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+
+    End Function
 End Class

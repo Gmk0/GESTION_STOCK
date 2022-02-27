@@ -34,11 +34,11 @@ Partial Class FormHistoValeur
         Me.boxDate = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.boxId = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.DatagridCom = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.comboProduit = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.boxMontant = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.DatagridCom = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox2.SuspendLayout()
         CType(Me.DatagridCom, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,7 +75,7 @@ Partial Class FormHistoValeur
         Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton1.ForeColor = System.Drawing.Color.White
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Redo
         Me.IconButton1.IconColor = System.Drawing.Color.Cornsilk
@@ -94,9 +94,9 @@ Partial Class FormHistoValeur
         Me.btnDelete.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnDelete.FlatAppearance.BorderSize = 0
         Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelete.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
         Me.btnDelete.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnDelete.IconSize = 40
@@ -114,9 +114,9 @@ Partial Class FormHistoValeur
         Me.btnModifier.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnModifier.FlatAppearance.BorderSize = 0
         Me.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModifier.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnModifier.ForeColor = System.Drawing.Color.White
-        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.Pen
         Me.btnModifier.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnModifier.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnModifier.IconSize = 40
@@ -134,7 +134,7 @@ Partial Class FormHistoValeur
         Me.btnAjouter.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnAjouter.FlatAppearance.BorderSize = 0
         Me.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAjouter.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnAjouter.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnAjouter.ForeColor = System.Drawing.Color.White
         Me.btnAjouter.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnAjouter.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -153,7 +153,7 @@ Partial Class FormHistoValeur
         Me.btnReset.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnReset.FlatAppearance.BorderSize = 0
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnReset.ForeColor = System.Drawing.Color.White
         Me.btnReset.IconChar = FontAwesome.Sharp.IconChar.Reply
         Me.btnReset.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -219,66 +219,6 @@ Partial Class FormHistoValeur
         Me.boxId.TabIndex = 15
         Me.boxId.Visible = False
         '
-        'DatagridCom
-        '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.DatagridCom.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.DatagridCom.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DatagridCom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DatagridCom.BackgroundColor = System.Drawing.Color.White
-        Me.DatagridCom.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DatagridCom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DatagridCom.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DatagridCom.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.DatagridCom.ColumnHeadersHeight = 20
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DatagridCom.DefaultCellStyle = DataGridViewCellStyle3
-        Me.DatagridCom.EnableHeadersVisualStyles = False
-        Me.DatagridCom.GridColor = System.Drawing.Color.White
-        Me.DatagridCom.Location = New System.Drawing.Point(56, 262)
-        Me.DatagridCom.Name = "DatagridCom"
-        Me.DatagridCom.RowHeadersVisible = False
-        Me.DatagridCom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DatagridCom.Size = New System.Drawing.Size(1015, 252)
-        Me.DatagridCom.TabIndex = 14
-        Me.DatagridCom.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
-        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.DatagridCom.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.DatagridCom.ThemeStyle.GridColor = System.Drawing.Color.White
-        Me.DatagridCom.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DatagridCom.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DatagridCom.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.DatagridCom.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.DatagridCom.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.DatagridCom.ThemeStyle.HeaderStyle.Height = 20
-        Me.DatagridCom.ThemeStyle.ReadOnly = False
-        Me.DatagridCom.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.DatagridCom.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DatagridCom.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.DatagridCom.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.DatagridCom.ThemeStyle.RowsStyle.Height = 22
-        Me.DatagridCom.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DatagridCom.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
         'comboProduit
         '
         Me.comboProduit.BackColor = System.Drawing.Color.Transparent
@@ -343,6 +283,66 @@ Partial Class FormHistoValeur
         Me.Label5.Size = New System.Drawing.Size(31, 15)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "PRIX"
+        '
+        'DatagridCom
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DatagridCom.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DatagridCom.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DatagridCom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DatagridCom.BackgroundColor = System.Drawing.Color.White
+        Me.DatagridCom.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DatagridCom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DatagridCom.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DatagridCom.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DatagridCom.ColumnHeadersHeight = 20
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DatagridCom.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DatagridCom.EnableHeadersVisualStyles = False
+        Me.DatagridCom.GridColor = System.Drawing.Color.White
+        Me.DatagridCom.Location = New System.Drawing.Point(56, 262)
+        Me.DatagridCom.Name = "DatagridCom"
+        Me.DatagridCom.RowHeadersVisible = False
+        Me.DatagridCom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DatagridCom.Size = New System.Drawing.Size(1015, 252)
+        Me.DatagridCom.TabIndex = 14
+        Me.DatagridCom.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
+        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.DatagridCom.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.DatagridCom.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.DatagridCom.ThemeStyle.GridColor = System.Drawing.Color.White
+        Me.DatagridCom.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DatagridCom.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DatagridCom.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.DatagridCom.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.DatagridCom.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.DatagridCom.ThemeStyle.HeaderStyle.Height = 20
+        Me.DatagridCom.ThemeStyle.ReadOnly = False
+        Me.DatagridCom.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.DatagridCom.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DatagridCom.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.DatagridCom.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.DatagridCom.ThemeStyle.RowsStyle.Height = 22
+        Me.DatagridCom.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DatagridCom.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
         'Label3
         '

@@ -131,6 +131,7 @@ Public Class produitController
 
 
 
+
         End If
     End Sub
     Public Sub updateCategorie(ByVal name As String, ByRef id As String)

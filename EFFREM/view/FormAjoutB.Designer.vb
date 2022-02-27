@@ -39,6 +39,7 @@ Partial Class FormAjoutB
         Me.btnReset = New FontAwesome.Sharp.IconButton()
         Me.boxLibelle = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.goru.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,6 +48,7 @@ Partial Class FormAjoutB
         Me.goru.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.goru.BorderRadius = 12
+        Me.goru.Controls.Add(Me.IconButton1)
         Me.goru.Controls.Add(Me.btnDelete)
         Me.goru.Controls.Add(Me.boxCat)
         Me.goru.Controls.Add(Me.LabelId)
@@ -76,13 +78,13 @@ Partial Class FormAjoutB
         Me.btnDelete.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnDelete.FlatAppearance.BorderSize = 0
         Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelete.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
         Me.btnDelete.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnDelete.IconSize = 40
-        Me.btnDelete.Location = New System.Drawing.Point(375, 272)
+        Me.btnDelete.Location = New System.Drawing.Point(373, 272)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(158, 45)
         Me.btnDelete.TabIndex = 16
@@ -158,9 +160,9 @@ Partial Class FormAjoutB
         Me.btnModifier.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnModifier.FlatAppearance.BorderSize = 0
         Me.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModifier.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnModifier.ForeColor = System.Drawing.Color.White
-        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
+        Me.btnModifier.IconChar = FontAwesome.Sharp.IconChar.Pen
         Me.btnModifier.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnModifier.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnModifier.IconSize = 40
@@ -236,7 +238,7 @@ Partial Class FormAjoutB
         Me.boxDesc.PlaceholderText = ""
         Me.boxDesc.SelectedText = ""
         Me.boxDesc.ShadowDecoration.Parent = Me.boxDesc
-        Me.boxDesc.Size = New System.Drawing.Size(188, 70)
+        Me.boxDesc.Size = New System.Drawing.Size(188, 79)
         Me.boxDesc.TabIndex = 8
         '
         'Label1
@@ -290,7 +292,7 @@ Partial Class FormAjoutB
         Me.btnAjouter.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnAjouter.FlatAppearance.BorderSize = 0
         Me.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAjouter.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnAjouter.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnAjouter.ForeColor = System.Drawing.Color.White
         Me.btnAjouter.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.btnAjouter.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -309,7 +311,7 @@ Partial Class FormAjoutB
         Me.btnReset.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnReset.FlatAppearance.BorderSize = 0
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.btnReset.ForeColor = System.Drawing.Color.White
         Me.btnReset.IconChar = FontAwesome.Sharp.IconChar.Reply
         Me.btnReset.IconColor = System.Drawing.SystemColors.ButtonHighlight
@@ -359,6 +361,25 @@ Partial Class FormAjoutB
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "PRODUIT"
         '
+        'IconButton1
+        '
+        Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton1.FlatAppearance.BorderSize = 0
+        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.IconButton1.ForeColor = System.Drawing.Color.White
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Redo
+        Me.IconButton1.IconColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.IconSize = 35
+        Me.IconButton1.Location = New System.Drawing.Point(593, 272)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Size = New System.Drawing.Size(53, 45)
+        Me.IconButton1.TabIndex = 19
+        Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton1.UseVisualStyleBackColor = False
+        Me.IconButton1.Visible = False
+        '
         'FormAjoutB
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -393,4 +414,5 @@ Partial Class FormAjoutB
     Friend WithEvents LabelId As Label
     Friend WithEvents boxId As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnDelete As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
 End Class

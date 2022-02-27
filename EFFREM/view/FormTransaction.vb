@@ -59,6 +59,7 @@
 
     Private Sub IconButton2_Click(sender As Object, e As EventArgs) Handles IconButton2.Click
         transactionControler.insertionTransac(DatagridProduit)
+        clean()
 
     End Sub
 
@@ -68,5 +69,13 @@
 
     Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
         chargemenTElementNum()
+    End Sub
+
+    Private Sub IconButton4_Click(sender As Object, e As EventArgs) Handles IconButton4.Click
+        clean()
+    End Sub
+    Private Sub clean()
+        boxMontant.Clear()
+        boxQte.Clear()
     End Sub
 End Class

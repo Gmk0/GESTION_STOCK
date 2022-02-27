@@ -30,7 +30,6 @@ Partial Class FormMenu3
         Me.iconButton30 = New FontAwesome.Sharp.IconButton()
         Me.iconButton31 = New FontAwesome.Sharp.IconButton()
         Me.iconButton32 = New FontAwesome.Sharp.IconButton()
-        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.paneloutils = New System.Windows.Forms.Panel()
         Me.btnOutils = New FontAwesome.Sharp.IconButton()
         Me.panelAchat = New System.Windows.Forms.Panel()
@@ -38,7 +37,6 @@ Partial Class FormMenu3
         Me.iconButton17 = New FontAwesome.Sharp.IconButton()
         Me.iconButton18 = New FontAwesome.Sharp.IconButton()
         Me.panelcolonne = New System.Windows.Forms.Panel()
-        Me.IconButton6 = New FontAwesome.Sharp.IconButton()
         Me.btcaisse = New FontAwesome.Sharp.IconButton()
         Me.iconButton19 = New FontAwesome.Sharp.IconButton()
         Me.panelVENTE = New System.Windows.Forms.Panel()
@@ -50,15 +48,20 @@ Partial Class FormMenu3
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.LabelTitre = New System.Windows.Forms.Label()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        Me.IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
+        Me.IconButton6 = New FontAwesome.Sharp.IconButton()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.paneloutils.SuspendLayout()
         Me.panelAchat.SuspendLayout()
         Me.panelcolonne.SuspendLayout()
         Me.panelVENTE.SuspendLayout()
         Me.panelProduit.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'iconButton1
@@ -72,9 +75,9 @@ Partial Class FormMenu3
         Me.iconButton1.IconColor = System.Drawing.Color.White
         Me.iconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.iconButton1.Location = New System.Drawing.Point(0, 157)
+        Me.iconButton1.Location = New System.Drawing.Point(0, 204)
         Me.iconButton1.Name = "iconButton1"
-        Me.iconButton1.Size = New System.Drawing.Size(197, 49)
+        Me.iconButton1.Size = New System.Drawing.Size(208, 49)
         Me.iconButton1.TabIndex = 2
         Me.iconButton1.Text = "DASHBORD"
         Me.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -87,7 +90,7 @@ Partial Class FormMenu3
         Me.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.pictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(197, 157)
+        Me.pictureBox1.Size = New System.Drawing.Size(208, 204)
         Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pictureBox1.TabIndex = 1
         Me.pictureBox1.TabStop = False
@@ -99,15 +102,15 @@ Partial Class FormMenu3
         Me.iconButton2.FlatAppearance.BorderSize = 0
         Me.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue
         Me.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iconButton2.Font = New System.Drawing.Font("MT Extra", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.iconButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton2.ForeColor = System.Drawing.Color.White
-        Me.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Medkit
+        Me.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ProductHunt
         Me.iconButton2.IconColor = System.Drawing.Color.White
         Me.iconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.iconButton2.Location = New System.Drawing.Point(0, 206)
+        Me.iconButton2.Location = New System.Drawing.Point(0, 253)
         Me.iconButton2.Name = "iconButton2"
-        Me.iconButton2.Size = New System.Drawing.Size(197, 49)
+        Me.iconButton2.Size = New System.Drawing.Size(208, 49)
         Me.iconButton2.TabIndex = 3
         Me.iconButton2.Text = "PRODUIT"
         Me.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -118,17 +121,18 @@ Partial Class FormMenu3
         '
         Me.iconButton5.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton5.FlatAppearance.BorderSize = 0
+        Me.iconButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton5.ForeColor = System.Drawing.Color.White
-        Me.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Virus
-        Me.iconButton5.IconColor = System.Drawing.Color.White
+        Me.iconButton5.IconChar = FontAwesome.Sharp.IconChar.TicketAlt
+        Me.iconButton5.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton5.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton5.IconSize = 28
+        Me.iconButton5.IconSize = 30
         Me.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton5.Location = New System.Drawing.Point(0, 54)
         Me.iconButton5.Name = "iconButton5"
-        Me.iconButton5.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton5.Size = New System.Drawing.Size(208, 27)
         Me.iconButton5.TabIndex = 2
         Me.iconButton5.Text = "VALEUR"
         Me.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -139,17 +143,18 @@ Partial Class FormMenu3
         '
         Me.iconButton4.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton4.FlatAppearance.BorderSize = 0
+        Me.iconButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton4.ForeColor = System.Drawing.Color.White
-        Me.iconButton4.IconChar = FontAwesome.Sharp.IconChar.PrescriptionBottleAlt
-        Me.iconButton4.IconColor = System.Drawing.Color.White
+        Me.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Bars
+        Me.iconButton4.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton4.IconSize = 28
+        Me.iconButton4.IconSize = 30
         Me.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton4.Location = New System.Drawing.Point(0, 27)
         Me.iconButton4.Name = "iconButton4"
-        Me.iconButton4.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton4.Size = New System.Drawing.Size(208, 27)
         Me.iconButton4.TabIndex = 1
         Me.iconButton4.Text = "CATEGORIE"
         Me.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -160,17 +165,18 @@ Partial Class FormMenu3
         '
         Me.iconButton30.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton30.FlatAppearance.BorderSize = 0
+        Me.iconButton30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton30.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton30.ForeColor = System.Drawing.Color.White
         Me.iconButton30.IconChar = FontAwesome.Sharp.IconChar.UserCog
-        Me.iconButton30.IconColor = System.Drawing.Color.White
+        Me.iconButton30.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton30.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton30.IconSize = 25
+        Me.iconButton30.IconSize = 30
         Me.iconButton30.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton30.Location = New System.Drawing.Point(0, 54)
         Me.iconButton30.Name = "iconButton30"
-        Me.iconButton30.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton30.Size = New System.Drawing.Size(208, 27)
         Me.iconButton30.TabIndex = 2
         Me.iconButton30.Text = "UTILISATEUR"
         Me.iconButton30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -181,17 +187,18 @@ Partial Class FormMenu3
         '
         Me.iconButton31.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton31.FlatAppearance.BorderSize = 0
+        Me.iconButton31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton31.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton31.ForeColor = System.Drawing.Color.White
-        Me.iconButton31.IconChar = FontAwesome.Sharp.IconChar.Save
-        Me.iconButton31.IconColor = System.Drawing.Color.White
+        Me.iconButton31.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.iconButton31.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton31.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton31.IconSize = 25
+        Me.iconButton31.IconSize = 30
         Me.iconButton31.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton31.Location = New System.Drawing.Point(0, 27)
         Me.iconButton31.Name = "iconButton31"
-        Me.iconButton31.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton31.Size = New System.Drawing.Size(208, 27)
         Me.iconButton31.TabIndex = 1
         Me.iconButton31.Text = "LOCALISATION"
         Me.iconButton31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -202,32 +209,23 @@ Partial Class FormMenu3
         '
         Me.iconButton32.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton32.FlatAppearance.BorderSize = 0
+        Me.iconButton32.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton32.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton32.ForeColor = System.Drawing.Color.White
-        Me.iconButton32.IconChar = FontAwesome.Sharp.IconChar.NotesMedical
-        Me.iconButton32.IconColor = System.Drawing.Color.White
+        Me.iconButton32.IconChar = FontAwesome.Sharp.IconChar.UserEdit
+        Me.iconButton32.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton32.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton32.IconSize = 25
+        Me.iconButton32.IconSize = 30
         Me.iconButton32.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton32.Location = New System.Drawing.Point(0, 0)
         Me.iconButton32.Name = "iconButton32"
-        Me.iconButton32.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton32.Size = New System.Drawing.Size(208, 27)
         Me.iconButton32.TabIndex = 0
         Me.iconButton32.Text = "NOUVEAU CLIENT"
         Me.iconButton32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.iconButton32.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.iconButton32.UseVisualStyleBackColor = True
-        '
-        'pictureBox2
-        '
-        Me.pictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pictureBox2.Location = New System.Drawing.Point(0, 842)
-        Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(197, 67)
-        Me.pictureBox2.TabIndex = 14
-        Me.pictureBox2.TabStop = False
         '
         'paneloutils
         '
@@ -236,9 +234,9 @@ Partial Class FormMenu3
         Me.paneloutils.Controls.Add(Me.iconButton31)
         Me.paneloutils.Controls.Add(Me.iconButton32)
         Me.paneloutils.Dock = System.Windows.Forms.DockStyle.Top
-        Me.paneloutils.Location = New System.Drawing.Point(0, 656)
+        Me.paneloutils.Location = New System.Drawing.Point(0, 691)
         Me.paneloutils.Name = "paneloutils"
-        Me.paneloutils.Size = New System.Drawing.Size(197, 88)
+        Me.paneloutils.Size = New System.Drawing.Size(208, 88)
         Me.paneloutils.TabIndex = 12
         '
         'btnOutils
@@ -248,15 +246,15 @@ Partial Class FormMenu3
         Me.btnOutils.FlatAppearance.BorderSize = 0
         Me.btnOutils.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue
         Me.btnOutils.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOutils.Font = New System.Drawing.Font("MT Extra", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOutils.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOutils.ForeColor = System.Drawing.Color.White
-        Me.btnOutils.IconChar = FontAwesome.Sharp.IconChar.CaretSquareDown
+        Me.btnOutils.IconChar = FontAwesome.Sharp.IconChar.UserAlt
         Me.btnOutils.IconColor = System.Drawing.Color.White
         Me.btnOutils.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btnOutils.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOutils.Location = New System.Drawing.Point(0, 607)
+        Me.btnOutils.Location = New System.Drawing.Point(0, 642)
         Me.btnOutils.Name = "btnOutils"
-        Me.btnOutils.Size = New System.Drawing.Size(197, 49)
+        Me.btnOutils.Size = New System.Drawing.Size(208, 49)
         Me.btnOutils.TabIndex = 11
         Me.btnOutils.Text = "CLIENT"
         Me.btnOutils.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -270,26 +268,27 @@ Partial Class FormMenu3
         Me.panelAchat.Controls.Add(Me.iconButton17)
         Me.panelAchat.Controls.Add(Me.iconButton18)
         Me.panelAchat.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelAchat.Location = New System.Drawing.Point(0, 519)
+        Me.panelAchat.Location = New System.Drawing.Point(0, 554)
         Me.panelAchat.Name = "panelAchat"
-        Me.panelAchat.Size = New System.Drawing.Size(197, 88)
+        Me.panelAchat.Size = New System.Drawing.Size(208, 88)
         Me.panelAchat.TabIndex = 8
         '
         'iconButton16
         '
         Me.iconButton16.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton16.FlatAppearance.BorderSize = 0
+        Me.iconButton16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton16.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton16.ForeColor = System.Drawing.Color.White
-        Me.iconButton16.IconChar = FontAwesome.Sharp.IconChar.FileExport
-        Me.iconButton16.IconColor = System.Drawing.Color.White
+        Me.iconButton16.IconChar = FontAwesome.Sharp.IconChar.FileInvoice
+        Me.iconButton16.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton16.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton16.IconSize = 28
+        Me.iconButton16.IconSize = 30
         Me.iconButton16.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton16.Location = New System.Drawing.Point(0, 54)
         Me.iconButton16.Name = "iconButton16"
-        Me.iconButton16.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton16.Size = New System.Drawing.Size(208, 27)
         Me.iconButton16.TabIndex = 2
         Me.iconButton16.Text = "RAPPORT STOCKAGE TOTAL"
         Me.iconButton16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -300,17 +299,18 @@ Partial Class FormMenu3
         '
         Me.iconButton17.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton17.FlatAppearance.BorderSize = 0
+        Me.iconButton17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton17.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton17.ForeColor = System.Drawing.Color.White
-        Me.iconButton17.IconChar = FontAwesome.Sharp.IconChar.FileAlt
-        Me.iconButton17.IconColor = System.Drawing.Color.White
+        Me.iconButton17.IconChar = FontAwesome.Sharp.IconChar.Table
+        Me.iconButton17.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton17.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton17.IconSize = 28
+        Me.iconButton17.IconSize = 30
         Me.iconButton17.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton17.Location = New System.Drawing.Point(0, 27)
         Me.iconButton17.Name = "iconButton17"
-        Me.iconButton17.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton17.Size = New System.Drawing.Size(208, 27)
         Me.iconButton17.TabIndex = 1
         Me.iconButton17.Text = "RAPPORT STOCKAGE"
         Me.iconButton17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -321,17 +321,18 @@ Partial Class FormMenu3
         '
         Me.iconButton18.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton18.FlatAppearance.BorderSize = 0
+        Me.iconButton18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton18.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton18.ForeColor = System.Drawing.Color.White
         Me.iconButton18.IconChar = FontAwesome.Sharp.IconChar.TruckMoving
-        Me.iconButton18.IconColor = System.Drawing.Color.White
+        Me.iconButton18.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton18.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton18.IconSize = 28
+        Me.iconButton18.IconSize = 30
         Me.iconButton18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton18.Location = New System.Drawing.Point(0, 0)
         Me.iconButton18.Name = "iconButton18"
-        Me.iconButton18.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton18.Size = New System.Drawing.Size(208, 27)
         Me.iconButton18.TabIndex = 0
         Me.iconButton18.Text = "APPROVISIONNEMENT"
         Me.iconButton18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -342,9 +343,11 @@ Partial Class FormMenu3
         '
         Me.panelcolonne.AutoScroll = True
         Me.panelcolonne.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.panelcolonne.Controls.Add(Me.Label1)
         Me.panelcolonne.Controls.Add(Me.IconButton6)
+        Me.panelcolonne.Controls.Add(Me.IconPictureBox1)
+        Me.panelcolonne.Controls.Add(Me.Label2)
         Me.panelcolonne.Controls.Add(Me.btcaisse)
-        Me.panelcolonne.Controls.Add(Me.pictureBox2)
         Me.panelcolonne.Controls.Add(Me.paneloutils)
         Me.panelcolonne.Controls.Add(Me.btnOutils)
         Me.panelcolonne.Controls.Add(Me.panelAchat)
@@ -358,30 +361,8 @@ Partial Class FormMenu3
         Me.panelcolonne.Dock = System.Windows.Forms.DockStyle.Left
         Me.panelcolonne.Location = New System.Drawing.Point(0, 0)
         Me.panelcolonne.Name = "panelcolonne"
-        Me.panelcolonne.Size = New System.Drawing.Size(214, 575)
+        Me.panelcolonne.Size = New System.Drawing.Size(214, 654)
         Me.panelcolonne.TabIndex = 7
-        '
-        'IconButton6
-        '
-        Me.IconButton6.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.IconButton6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.IconButton6.FlatAppearance.BorderSize = 0
-        Me.IconButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue
-        Me.IconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton6.Font = New System.Drawing.Font("MT Extra", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton6.ForeColor = System.Drawing.Color.White
-        Me.IconButton6.IconChar = FontAwesome.Sharp.IconChar.Frown
-        Me.IconButton6.IconColor = System.Drawing.Color.White
-        Me.IconButton6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton6.Location = New System.Drawing.Point(0, 793)
-        Me.IconButton6.Name = "IconButton6"
-        Me.IconButton6.Size = New System.Drawing.Size(197, 49)
-        Me.IconButton6.TabIndex = 16
-        Me.IconButton6.Text = "EXIT"
-        Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton6.UseVisualStyleBackColor = False
         '
         'btcaisse
         '
@@ -389,15 +370,15 @@ Partial Class FormMenu3
         Me.btcaisse.Dock = System.Windows.Forms.DockStyle.Top
         Me.btcaisse.FlatAppearance.BorderSize = 0
         Me.btcaisse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btcaisse.Font = New System.Drawing.Font("MT Extra", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btcaisse.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btcaisse.ForeColor = System.Drawing.Color.White
         Me.btcaisse.IconChar = FontAwesome.Sharp.IconChar.CashRegister
         Me.btcaisse.IconColor = System.Drawing.Color.White
         Me.btcaisse.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btcaisse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btcaisse.Location = New System.Drawing.Point(0, 744)
+        Me.btcaisse.Location = New System.Drawing.Point(0, 779)
         Me.btcaisse.Name = "btcaisse"
-        Me.btcaisse.Size = New System.Drawing.Size(197, 49)
+        Me.btcaisse.Size = New System.Drawing.Size(208, 49)
         Me.btcaisse.TabIndex = 15
         Me.btcaisse.Text = "CAISSE"
         Me.btcaisse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -410,15 +391,15 @@ Partial Class FormMenu3
         Me.iconButton19.FlatAppearance.BorderSize = 0
         Me.iconButton19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue
         Me.iconButton19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iconButton19.Font = New System.Drawing.Font("MT Extra", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.iconButton19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton19.ForeColor = System.Drawing.Color.White
         Me.iconButton19.IconChar = FontAwesome.Sharp.IconChar.CartPlus
         Me.iconButton19.IconColor = System.Drawing.Color.White
         Me.iconButton19.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.iconButton19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.iconButton19.Location = New System.Drawing.Point(0, 470)
+        Me.iconButton19.Location = New System.Drawing.Point(0, 505)
         Me.iconButton19.Name = "iconButton19"
-        Me.iconButton19.Size = New System.Drawing.Size(197, 49)
+        Me.iconButton19.Size = New System.Drawing.Size(208, 49)
         Me.iconButton19.TabIndex = 7
         Me.iconButton19.Text = "ACHAT"
         Me.iconButton19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -431,26 +412,27 @@ Partial Class FormMenu3
         Me.panelVENTE.Controls.Add(Me.iconButton11)
         Me.panelVENTE.Controls.Add(Me.iconButton12)
         Me.panelVENTE.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelVENTE.Location = New System.Drawing.Point(0, 403)
+        Me.panelVENTE.Location = New System.Drawing.Point(0, 444)
         Me.panelVENTE.Name = "panelVENTE"
-        Me.panelVENTE.Size = New System.Drawing.Size(197, 67)
+        Me.panelVENTE.Size = New System.Drawing.Size(208, 61)
         Me.panelVENTE.TabIndex = 6
         '
         'iconButton11
         '
         Me.iconButton11.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton11.FlatAppearance.BorderSize = 0
+        Me.iconButton11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton11.ForeColor = System.Drawing.Color.White
         Me.iconButton11.IconChar = FontAwesome.Sharp.IconChar.FileAlt
-        Me.iconButton11.IconColor = System.Drawing.Color.White
+        Me.iconButton11.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton11.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton11.IconSize = 28
+        Me.iconButton11.IconSize = 30
         Me.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton11.Location = New System.Drawing.Point(0, 27)
         Me.iconButton11.Name = "iconButton11"
-        Me.iconButton11.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton11.Size = New System.Drawing.Size(208, 28)
         Me.iconButton11.TabIndex = 1
         Me.iconButton11.Text = "RAPPORTS DE VENTE"
         Me.iconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -461,17 +443,18 @@ Partial Class FormMenu3
         '
         Me.iconButton12.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton12.FlatAppearance.BorderSize = 0
+        Me.iconButton12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton12.ForeColor = System.Drawing.Color.White
         Me.iconButton12.IconChar = FontAwesome.Sharp.IconChar.DollarSign
-        Me.iconButton12.IconColor = System.Drawing.Color.White
+        Me.iconButton12.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton12.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton12.IconSize = 28
+        Me.iconButton12.IconSize = 30
         Me.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton12.Location = New System.Drawing.Point(0, 0)
         Me.iconButton12.Name = "iconButton12"
-        Me.iconButton12.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton12.Size = New System.Drawing.Size(208, 27)
         Me.iconButton12.TabIndex = 0
         Me.iconButton12.Text = "TRANSACTION"
         Me.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -484,15 +467,15 @@ Partial Class FormMenu3
         Me.iconButton13.FlatAppearance.BorderSize = 0
         Me.iconButton13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue
         Me.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iconButton13.Font = New System.Drawing.Font("MT Extra", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.iconButton13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton13.ForeColor = System.Drawing.Color.White
         Me.iconButton13.IconChar = FontAwesome.Sharp.IconChar.CashRegister
         Me.iconButton13.IconColor = System.Drawing.Color.White
         Me.iconButton13.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.iconButton13.Location = New System.Drawing.Point(0, 354)
+        Me.iconButton13.Location = New System.Drawing.Point(0, 395)
         Me.iconButton13.Name = "iconButton13"
-        Me.iconButton13.Size = New System.Drawing.Size(197, 49)
+        Me.iconButton13.Size = New System.Drawing.Size(208, 49)
         Me.iconButton13.TabIndex = 5
         Me.iconButton13.Text = "vente"
         Me.iconButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -506,26 +489,27 @@ Partial Class FormMenu3
         Me.panelProduit.Controls.Add(Me.iconButton4)
         Me.panelProduit.Controls.Add(Me.iconButton3)
         Me.panelProduit.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelProduit.Location = New System.Drawing.Point(0, 255)
+        Me.panelProduit.Location = New System.Drawing.Point(0, 302)
         Me.panelProduit.Name = "panelProduit"
-        Me.panelProduit.Size = New System.Drawing.Size(197, 99)
+        Me.panelProduit.Size = New System.Drawing.Size(208, 93)
         Me.panelProduit.TabIndex = 4
         '
         'iconButton3
         '
         Me.iconButton3.Dock = System.Windows.Forms.DockStyle.Top
         Me.iconButton3.FlatAppearance.BorderSize = 0
+        Me.iconButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
         Me.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.iconButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iconButton3.ForeColor = System.Drawing.Color.White
-        Me.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Pills
-        Me.iconButton3.IconColor = System.Drawing.Color.White
+        Me.iconButton3.IconChar = FontAwesome.Sharp.IconChar.FileDownload
+        Me.iconButton3.IconColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.iconButton3.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton3.IconSize = 28
+        Me.iconButton3.IconSize = 30
         Me.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton3.Location = New System.Drawing.Point(0, 0)
         Me.iconButton3.Name = "iconButton3"
-        Me.iconButton3.Size = New System.Drawing.Size(197, 27)
+        Me.iconButton3.Size = New System.Drawing.Size(208, 27)
         Me.iconButton3.TabIndex = 0
         Me.iconButton3.Text = "NOUVEAU PRODUIT"
         Me.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -534,8 +518,8 @@ Partial Class FormMenu3
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.IconPictureBox2)
         Me.Panel1.Controls.Add(Me.LabelTitre)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(214, 0)
@@ -559,25 +543,86 @@ Partial Class FormMenu3
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelMenu.Location = New System.Drawing.Point(214, 52)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(926, 523)
+        Me.PanelMenu.Size = New System.Drawing.Size(926, 602)
         Me.PanelMenu.TabIndex = 9
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Unicode", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(12, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(196, 28)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "GMK GESTION "
+        '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.IconPictureBox1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ShippingFast
+        Me.IconPictureBox1.IconColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox1.IconSize = 124
+        Me.IconPictureBox1.Location = New System.Drawing.Point(3, 40)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(191, 124)
+        Me.IconPictureBox1.TabIndex = 17
+        Me.IconPictureBox1.TabStop = False
+        Me.IconPictureBox1.UseGdi = True
+        '
+        'IconPictureBox2
+        '
+        Me.IconPictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.IconPictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.IconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserAlt
+        Me.IconPictureBox2.IconColor = System.Drawing.Color.White
+        Me.IconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox2.Location = New System.Drawing.Point(864, 9)
+        Me.IconPictureBox2.Name = "IconPictureBox2"
+        Me.IconPictureBox2.Size = New System.Drawing.Size(32, 32)
+        Me.IconPictureBox2.TabIndex = 1
+        Me.IconPictureBox2.TabStop = False
+        '
+        'IconButton6
+        '
+        Me.IconButton6.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.IconButton6.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.IconButton6.FlatAppearance.BorderSize = 0
+        Me.IconButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue
+        Me.IconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IconButton6.ForeColor = System.Drawing.Color.White
+        Me.IconButton6.IconChar = FontAwesome.Sharp.IconChar.PowerOff
+        Me.IconButton6.IconColor = System.Drawing.Color.White
+        Me.IconButton6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton6.Location = New System.Drawing.Point(0, 828)
+        Me.IconButton6.Name = "IconButton6"
+        Me.IconButton6.Size = New System.Drawing.Size(208, 49)
+        Me.IconButton6.TabIndex = 18
+        Me.IconButton6.Text = "EXIT"
+        Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton6.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(827, 19)
+        Me.Label1.Location = New System.Drawing.Point(109, 144)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 17)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "user"
+        Me.Label1.Size = New System.Drawing.Size(85, 20)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "Fast Life"
         '
         'FormMenu3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1140, 575)
+        Me.ClientSize = New System.Drawing.Size(1140, 654)
         Me.Controls.Add(Me.PanelMenu)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelcolonne)
@@ -585,14 +630,16 @@ Partial Class FormMenu3
         Me.Text = "FormMenu3"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.paneloutils.ResumeLayout(False)
         Me.panelAchat.ResumeLayout(False)
         Me.panelcolonne.ResumeLayout(False)
+        Me.panelcolonne.PerformLayout()
         Me.panelVENTE.ResumeLayout(False)
         Me.panelProduit.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -604,7 +651,6 @@ Partial Class FormMenu3
     Private WithEvents iconButton30 As FontAwesome.Sharp.IconButton
     Private WithEvents iconButton31 As FontAwesome.Sharp.IconButton
     Private WithEvents iconButton32 As FontAwesome.Sharp.IconButton
-    Private WithEvents pictureBox2 As PictureBox
     Private WithEvents paneloutils As Panel
     Public WithEvents btnOutils As FontAwesome.Sharp.IconButton
     Private WithEvents panelAchat As Panel
@@ -619,10 +665,13 @@ Partial Class FormMenu3
     Private WithEvents iconButton13 As FontAwesome.Sharp.IconButton
     Private WithEvents panelProduit As Panel
     Private WithEvents iconButton3 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton6 As FontAwesome.Sharp.IconButton
     Private WithEvents btcaisse As FontAwesome.Sharp.IconButton
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PanelMenu As Panel
     Friend WithEvents LabelTitre As Label
+    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents IconPictureBox2 As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents Label1 As Label
+    Private WithEvents IconButton6 As FontAwesome.Sharp.IconButton
 End Class

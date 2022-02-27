@@ -61,7 +61,7 @@ Public Class ProduitManager
             command.Parameters.AddWithValue("@nom", produitC.getProduit)
             command.Parameters.AddWithValue("@seuil", produitC.getSeuilRupture)
             command.Parameters.AddWithValue("@desc", produitC.getDescription)
-            command.Parameters.AddWithValue("@cate", produitC.getCategorie)
+            command.Parameters.AddWithValue("@categ", produitC.getCategorie)
 
             openConnection()
             If command.ExecuteNonQuery Then

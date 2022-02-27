@@ -26,7 +26,7 @@
             GetLocal.getVilleName = ville
             GetLocal.getVilleNum = villeNum
             loacalManager.UpdateVille(GetLocal)
-            MsgBox("la ville" + ville + " a ete  Modifier", MsgBoxStyle.Information)
+            MsgBox("la ville " + ville + " a ete  Modifier", MsgBoxStyle.Information)
 
 
 
@@ -40,7 +40,7 @@
             GetLocal.getVilleNum = villeNum
             If MsgBox("voulez vous suprimmer ce produit", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes Then
                 loacalManager.deleteVille(GetLocal)
-                MsgBox("la ville a ete effacer", "REUSSITE", MsgBoxStyle.Information)
+                MsgBox("la ville a ete effacer", MsgBoxStyle.Information)
             End If
 
         End If
@@ -55,7 +55,7 @@
             GetLocal.getComName = commune
             GetLocal.getVilleNum = boxNum
             loacalManager.insertionCommune(GetLocal)
-            MsgBox("la ville" + commune + " a ete ajoutee avec succes", MsgBoxStyle.Information)
+            MsgBox("la ville  " + commune + " a ete ajoutee avec succes", MsgBoxStyle.Information)
 
 
 
