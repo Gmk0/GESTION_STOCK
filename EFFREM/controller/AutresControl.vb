@@ -1,4 +1,4 @@
-﻿Imports System.Windows
+﻿Imports System.Windows.Forms
 Public Class AutresControl
     Public Sub AjoutButtonn(ByVal datagrid As DataGridView)
         With datagrid.Columns
@@ -18,10 +18,10 @@ Public Class AutresControl
     End Sub
 
     Private activeForm As Form = Nothing
-    Private cursor As Cursor
+    ' Private cursor As Cursor
     Public Sub showMenu(ByRef childForm As Form, ByRef panelMenu As Panel)
 
-        cursor = Cursors.WaitCursor
+
         If activeForm IsNot Nothing Then
             activeForm.Close()
         End If
@@ -34,7 +34,7 @@ Public Class AutresControl
         panelMenu.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
-        cursor = Cursors.Default
+
 
 
     End Sub

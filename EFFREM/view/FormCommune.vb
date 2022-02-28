@@ -130,7 +130,7 @@
         btnReset.Visible = True
         btnDelete.Visible = False
         btnModifier.Visible = False
-        IconButton2.Visible = False
+        IconButton1.Visible = False
     End Sub
 
     Private Sub btnModicierC_Click(sender As Object, e As EventArgs) Handles btnModicierC.Click

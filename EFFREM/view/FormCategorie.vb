@@ -2,12 +2,14 @@
 
     Private controlerProduit As New produitController
     Private idCat As String
+    Private otherControl As New AutresControl
     Private Sub Guna2GroupBox1_Click(sender As Object, e As EventArgs) Handles Guna2GroupBox1.Click
 
     End Sub
 
     Private Sub FormCategorie_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         chargementElement()
+        ShowbUtton()
     End Sub
 
 
@@ -45,14 +47,7 @@
     End Sub
 
     Private Sub DatagridCategorie_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
-        If e.RowIndex >= 0 Then
-            Dim row As DataGridViewRow = New DataGridViewRow
-            row = DatagridCategorie.Rows(e.RowIndex)
-            idCat = row.Cells(0).Value.ToString()
-            boxCategorie.Text = row.Cells(1).Value.ToString()
-            visibleButtonD()
 
-        End If
     End Sub
     Public Sub visibleButtonD()
         btnAjouter.Visible = False
@@ -73,5 +68,19 @@
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
         visibleNot()
         boxCategorie.Clear()
+    End Sub
+    Private Sub ShowbUtton()
+        otherControl.AjoutButtonn(DatagridCategorie)
+    End Sub
+
+    Private Sub DatagridCategorie_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DatagridCategorie.CellContentClick
+        If e.RowIndex >= 0 AndAlso e.ColumnIndex = DatagridCategorie.Columns("MODIFICATION").Index Then
+            Dim row As DataGridViewRow = New DataGridViewRow
+            row = DatagridCategorie.Rows(e.RowIndex)
+            idCat = row.Cells("Num").Value.ToString()
+            boxCategorie.Text = row.Cells("Name").Value.ToString()
+            visibleButtonD()
+
+        End If
     End Sub
 End Class

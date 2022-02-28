@@ -74,6 +74,6 @@
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
         visibleNot()
-
+        clean()
     End Sub
 End Class

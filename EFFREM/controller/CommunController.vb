@@ -147,9 +147,15 @@
         End Try
 
     End Function
-    Public Sub subC()
-
-
-    End Sub
+    Public Function shoWComune(ByVal combo As ComboBox) As DataTable
+        Try
+            GetLocal.getComName = combo.Text
+            table = loacalManager.showComuneByName(GetLocal)
+            Return table
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
 
 End Class

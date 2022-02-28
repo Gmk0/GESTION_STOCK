@@ -134,9 +134,9 @@ Partial Class FormProduitA
         Me.IconButton2.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton2.FlatAppearance.BorderSize = 0
         Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton2.ForeColor = System.Drawing.Color.White
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.NotesMedical
+        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Sync
         Me.IconButton2.IconColor = System.Drawing.SystemColors.ButtonHighlight
         Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton2.IconSize = 40
@@ -177,7 +177,7 @@ Partial Class FormProduitA
         Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.IconButton1.ForeColor = System.Drawing.Color.White
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle
         Me.IconButton1.IconColor = System.Drawing.SystemColors.ButtonHighlight

@@ -238,8 +238,9 @@ Public Class CommuneVilleManager
 
     Public Function showComuneByName(ByVal loc As GET_Local)
         Try
-            requete = "select num from enumCommune where name ='" + loc.getComName + "'"
+            requete = "select num from enumCommune where name =@name"
             command = New SqlCommand(requete, GetConnection)
+            command.Parameters.AddWithValue("@name", loc.getComName)
             adapter = New SqlDataAdapter(command)
             table = New DataTable
             adapter.Fill(table)

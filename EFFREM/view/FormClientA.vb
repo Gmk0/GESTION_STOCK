@@ -70,7 +70,7 @@
             form.boxName.Text = row.Cells("name").Value.ToString()
             form.boxGsm.Text = row.Cells("gsm").Value.ToString()
             form.boxC.Text = row.Cells("communeNum").Value.ToString()
-            form.boxC.Visible = True
+            form.boxC.Visible = False
             form.visibleButtonD()
             form.ShowDialog()
 

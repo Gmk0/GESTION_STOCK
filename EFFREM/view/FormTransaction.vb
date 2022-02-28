@@ -34,10 +34,10 @@
 
         Table = ValeurControl.showValeur(comboProduit)
         If Table.Rows.Count > 0 Then
-            boxPrixValue.Text = Table.Rows(0)("prix")
+            boxPrixValue.Text = Table.Rows(0)("Prix")
             idPrix = Table.Rows(0)("id")
         Else
-            boxPrixValue.Text = "0"
+            ' boxPrixValue.Text = "0"
         End If
     End Sub
 

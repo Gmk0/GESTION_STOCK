@@ -52,7 +52,7 @@ Public Class produitController
             GetProduit.getIdproduit = id
             If MsgBox("voulez vous suprimmer ce produit", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes Then
                 loacalProduit.deleteProduit(GetProduit)
-                MsgBox("le cleint  a ete effacer", MsgBoxStyle.Information)
+                MsgBox("le produit  a ete effacer", MsgBoxStyle.Information)
             End If
 
         End If

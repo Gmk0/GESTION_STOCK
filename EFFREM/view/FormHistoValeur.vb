@@ -62,7 +62,7 @@
     End Sub
 
     Private Sub btnAjouter_Click(sender As Object, e As EventArgs) Handles btnAjouter.Click
-        valeurController.insertionValeur(boxId.Text, boxMontant.Text, boxDate.Value.ToString)
+        valeurController.insertionValeur(boxId.Text, boxMontant.Text, boxDate.Value.ToString("yyyy/MM/dd"))
         chargementElement()
         boxMontant.Clear()
     End Sub

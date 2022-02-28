@@ -3,6 +3,7 @@
     Public controlCommune As New CommunController
     Public id As String
     Private idB As String
+    Private table As DataTable
     Private Sub FormClientB_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         chargementElement()
     End Sub
@@ -56,10 +57,7 @@
 
     Public Sub comm()
 
-        Dim localManager As New CommuneVilleManager
-        Dim GetLocal As New GET_Local
-        GetLocal.getComName = comboCommune.Text
-        Dim table As DataTable = localManager.showComuneByName(GetLocal)
+        table = controlCommune.shoWComune(comboCommune)
         If table.Rows.Count > 0 Then
             boxC.Text = table.Rows(0)(0)
         End If
@@ -84,6 +82,7 @@
     End Sub
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
-
+        visibleNot()
+        clean()
     End Sub
 End Class

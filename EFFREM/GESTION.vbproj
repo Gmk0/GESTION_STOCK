@@ -181,6 +181,12 @@
     <Compile Include="view\FormCommune.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="view\FormDashbord.Designer.vb">
+      <DependentUpon>FormDashbord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormDashbord.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="view\FormHistoValeur.Designer.vb">
       <DependentUpon>FormHistoValeur.vb</DependentUpon>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormCommune.resx">
       <DependentUpon>FormCommune.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormDashbord.resx">
+      <DependentUpon>FormDashbord.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormHistoValeur.resx">
       <DependentUpon>FormHistoValeur.vb</DependentUpon>
