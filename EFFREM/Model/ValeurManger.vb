@@ -89,7 +89,7 @@ Public Class ValeurManger
     Public Function ShowValeur() As DataTable
 
         Try
-            requete = "SELECT top(150)* FROM histoValeur"
+            requete = "SELECT top(1000)* FROM histoValeur order by valuerDate desc"
             command = New SqlCommand(requete, GetConnection)
             adapter = New SqlDataAdapter(command)
             table = New DataTable()

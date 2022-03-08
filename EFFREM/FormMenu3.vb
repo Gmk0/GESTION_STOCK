@@ -1,8 +1,21 @@
 ﻿Public Class FormMenu3
-    Private OtherControl As New AutresControl
+    Public OtherControl As New AutresControl
+
+
+
+
     Private Sub FormMenu3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         custom()
-        showDash()
+        'showDash()
+        chargementDash()
+    End Sub
+
+    Sub chargementDash()
+        LabelClient.Text = OtherControl.chargementClientCount()
+        LabelProduit.Text = OtherControl.chargementProduitCount()
+        LabelRutute.Text = OtherControl.chargementStockRCount()
+
+
     End Sub
 
     Public Sub custom()
@@ -62,6 +75,7 @@
         OtherControl.showMenu(New FormProduitA, PanelMenu)
         LabelTitre.Text = "PRODUIT"
         hideMenu()
+
         Cursor = Cursors.Default
     End Sub
 
@@ -201,7 +215,9 @@
 
     Private Sub iconButton1_Click(sender As Object, e As EventArgs) Handles iconButton1.Click
 
-        showDash()
+        PanelMenu2.BringToFront()
+
+
     End Sub
     Public Sub showDash()
         Cursor = Cursors.WaitCursor
@@ -210,5 +226,48 @@
         hideMenu()
         LabelTitre.Text = "DASHBORD"
         Cursor = Cursors.Default
+    End Sub
+
+    Private Sub PanelMenu2_Paint(sender As Object, e As PaintEventArgs) Handles PanelMenu2.Paint
+
+    End Sub
+
+    Private Sub PanelDashbord_Paint(sender As Object, e As PaintEventArgs) Handles PanelDashbord.Paint
+
+    End Sub
+
+    Private Sub IconButton10_Click_2(sender As Object, e As EventArgs) Handles IconButton10.Click
+        Cursor = Cursors.WaitCursor
+        OtherControl.showMenu(New FormClientA, PanelMenu)
+        hideMenu()
+        LabelTitre.Text = "CLIENT"
+        Cursor = Cursors.Default
+    End Sub
+
+    Private Sub IconButton9_Click(sender As Object, e As EventArgs) Handles IconButton9.Click
+        Cursor = Cursors.WaitCursor
+        OtherControl.showMenu(New FormProduitA, PanelMenu)
+        LabelTitre.Text = "PRODUIT"
+        hideMenu()
+
+        Cursor = Cursors.Default
+    End Sub
+
+    Private Sub IconButton8_Click_1(sender As Object, e As EventArgs) Handles IconButton8.Click
+        Cursor = Cursors.WaitCursor
+
+        OtherControl.showMenu(New FormStock, PanelMenu)
+        hideMenu()
+        LabelTitre.Text = "STOCKAGE TOTAL"
+        Cursor = Cursors.Default
+    End Sub
+
+    Private Sub IconButton7_Click_2(sender As Object, e As EventArgs) Handles IconButton7.Click
+        Cursor = Cursors.WaitCursor
+        OtherControl.showMenu(New FormRapportVente, PanelMenu)
+        LabelTitre.Text = "RAPPORT DE VENTE"
+        hideMenu()
+        Cursor = Cursors.Default
+
     End Sub
 End Class

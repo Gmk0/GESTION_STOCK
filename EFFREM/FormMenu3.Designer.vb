@@ -22,12 +22,12 @@ Partial Class FormMenu3
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenu3))
         Me.iconButton1 = New FontAwesome.Sharp.IconButton()
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.iconButton2 = New FontAwesome.Sharp.IconButton()
         Me.iconButton5 = New FontAwesome.Sharp.IconButton()
         Me.iconButton4 = New FontAwesome.Sharp.IconButton()
-        Me.iconButton30 = New FontAwesome.Sharp.IconButton()
         Me.iconButton31 = New FontAwesome.Sharp.IconButton()
         Me.iconButton32 = New FontAwesome.Sharp.IconButton()
         Me.paneloutils = New System.Windows.Forms.Panel()
@@ -39,7 +39,6 @@ Partial Class FormMenu3
         Me.panelcolonne = New System.Windows.Forms.Panel()
         Me.IconButton6 = New FontAwesome.Sharp.IconButton()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btcaisse = New FontAwesome.Sharp.IconButton()
         Me.iconButton19 = New FontAwesome.Sharp.IconButton()
         Me.panelVENTE = New System.Windows.Forms.Panel()
         Me.iconButton11 = New FontAwesome.Sharp.IconButton()
@@ -51,6 +50,24 @@ Partial Class FormMenu3
         Me.IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
         Me.LabelTitre = New System.Windows.Forms.Label()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.PanelMenu2 = New System.Windows.Forms.Panel()
+        Me.PanelDashbord = New System.Windows.Forms.Panel()
+        Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.LabelClient = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.IconButton10 = New FontAwesome.Sharp.IconButton()
+        Me.Guna2GroupBox3 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.LabelProduit = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.IconButton9 = New FontAwesome.Sharp.IconButton()
+        Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.LabelRutute = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.IconButton8 = New FontAwesome.Sharp.IconButton()
+        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.IconButton7 = New FontAwesome.Sharp.IconButton()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.paneloutils.SuspendLayout()
         Me.panelAchat.SuspendLayout()
@@ -59,6 +76,14 @@ Partial Class FormMenu3
         Me.panelProduit.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelMenu.SuspendLayout()
+        Me.PanelMenu2.SuspendLayout()
+        Me.PanelDashbord.SuspendLayout()
+        Me.Guna2GroupBox4.SuspendLayout()
+        Me.Guna2GroupBox3.SuspendLayout()
+        Me.Guna2GroupBox2.SuspendLayout()
+        Me.Guna2GroupBox1.SuspendLayout()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'iconButton1
@@ -74,7 +99,7 @@ Partial Class FormMenu3
         Me.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.iconButton1.Location = New System.Drawing.Point(0, 219)
         Me.iconButton1.Name = "iconButton1"
-        Me.iconButton1.Size = New System.Drawing.Size(208, 49)
+        Me.iconButton1.Size = New System.Drawing.Size(197, 49)
         Me.iconButton1.TabIndex = 2
         Me.iconButton1.Text = "DASHBORD"
         Me.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -87,7 +112,7 @@ Partial Class FormMenu3
         Me.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.pictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(208, 219)
+        Me.pictureBox1.Size = New System.Drawing.Size(197, 219)
         Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pictureBox1.TabIndex = 1
         Me.pictureBox1.TabStop = False
@@ -107,7 +132,7 @@ Partial Class FormMenu3
         Me.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.iconButton2.Location = New System.Drawing.Point(0, 268)
         Me.iconButton2.Name = "iconButton2"
-        Me.iconButton2.Size = New System.Drawing.Size(208, 49)
+        Me.iconButton2.Size = New System.Drawing.Size(197, 49)
         Me.iconButton2.TabIndex = 3
         Me.iconButton2.Text = "PRODUIT"
         Me.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -129,7 +154,7 @@ Partial Class FormMenu3
         Me.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton5.Location = New System.Drawing.Point(0, 54)
         Me.iconButton5.Name = "iconButton5"
-        Me.iconButton5.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton5.Size = New System.Drawing.Size(197, 27)
         Me.iconButton5.TabIndex = 2
         Me.iconButton5.Text = "VALEUR"
         Me.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -151,35 +176,12 @@ Partial Class FormMenu3
         Me.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton4.Location = New System.Drawing.Point(0, 27)
         Me.iconButton4.Name = "iconButton4"
-        Me.iconButton4.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton4.Size = New System.Drawing.Size(197, 27)
         Me.iconButton4.TabIndex = 1
         Me.iconButton4.Text = "CATEGORIE"
         Me.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.iconButton4.UseVisualStyleBackColor = True
-        '
-        'iconButton30
-        '
-        Me.iconButton30.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.iconButton30.Dock = System.Windows.Forms.DockStyle.Top
-        Me.iconButton30.FlatAppearance.BorderSize = 0
-        Me.iconButton30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.iconButton30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iconButton30.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.iconButton30.ForeColor = System.Drawing.Color.White
-        Me.iconButton30.IconChar = FontAwesome.Sharp.IconChar.UserCog
-        Me.iconButton30.IconColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.iconButton30.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.iconButton30.IconSize = 30
-        Me.iconButton30.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.iconButton30.Location = New System.Drawing.Point(0, 54)
-        Me.iconButton30.Name = "iconButton30"
-        Me.iconButton30.Size = New System.Drawing.Size(208, 27)
-        Me.iconButton30.TabIndex = 2
-        Me.iconButton30.Text = "UTILISATEUR"
-        Me.iconButton30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.iconButton30.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        Me.iconButton30.UseVisualStyleBackColor = True
         '
         'iconButton31
         '
@@ -197,7 +199,7 @@ Partial Class FormMenu3
         Me.iconButton31.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton31.Location = New System.Drawing.Point(0, 27)
         Me.iconButton31.Name = "iconButton31"
-        Me.iconButton31.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton31.Size = New System.Drawing.Size(197, 27)
         Me.iconButton31.TabIndex = 1
         Me.iconButton31.Text = "LOCALISATION"
         Me.iconButton31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -220,7 +222,7 @@ Partial Class FormMenu3
         Me.iconButton32.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton32.Location = New System.Drawing.Point(0, 0)
         Me.iconButton32.Name = "iconButton32"
-        Me.iconButton32.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton32.Size = New System.Drawing.Size(197, 27)
         Me.iconButton32.TabIndex = 0
         Me.iconButton32.Text = "NOUVEAU CLIENT"
         Me.iconButton32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -230,13 +232,12 @@ Partial Class FormMenu3
         'paneloutils
         '
         Me.paneloutils.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.paneloutils.Controls.Add(Me.iconButton30)
         Me.paneloutils.Controls.Add(Me.iconButton31)
         Me.paneloutils.Controls.Add(Me.iconButton32)
         Me.paneloutils.Dock = System.Windows.Forms.DockStyle.Top
         Me.paneloutils.Location = New System.Drawing.Point(0, 706)
         Me.paneloutils.Name = "paneloutils"
-        Me.paneloutils.Size = New System.Drawing.Size(208, 88)
+        Me.paneloutils.Size = New System.Drawing.Size(197, 64)
         Me.paneloutils.TabIndex = 12
         '
         'btnOutils
@@ -255,7 +256,7 @@ Partial Class FormMenu3
         Me.btnOutils.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnOutils.Location = New System.Drawing.Point(0, 657)
         Me.btnOutils.Name = "btnOutils"
-        Me.btnOutils.Size = New System.Drawing.Size(208, 49)
+        Me.btnOutils.Size = New System.Drawing.Size(197, 49)
         Me.btnOutils.TabIndex = 11
         Me.btnOutils.Text = "CLIENT"
         Me.btnOutils.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -271,7 +272,7 @@ Partial Class FormMenu3
         Me.panelAchat.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelAchat.Location = New System.Drawing.Point(0, 569)
         Me.panelAchat.Name = "panelAchat"
-        Me.panelAchat.Size = New System.Drawing.Size(208, 88)
+        Me.panelAchat.Size = New System.Drawing.Size(197, 88)
         Me.panelAchat.TabIndex = 8
         '
         'iconButton16
@@ -290,7 +291,7 @@ Partial Class FormMenu3
         Me.iconButton16.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton16.Location = New System.Drawing.Point(0, 54)
         Me.iconButton16.Name = "iconButton16"
-        Me.iconButton16.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton16.Size = New System.Drawing.Size(197, 27)
         Me.iconButton16.TabIndex = 2
         Me.iconButton16.Text = "RAPPORT STOCKAGE TOTAL"
         Me.iconButton16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -313,7 +314,7 @@ Partial Class FormMenu3
         Me.iconButton17.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton17.Location = New System.Drawing.Point(0, 27)
         Me.iconButton17.Name = "iconButton17"
-        Me.iconButton17.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton17.Size = New System.Drawing.Size(197, 27)
         Me.iconButton17.TabIndex = 1
         Me.iconButton17.Text = "RAPPORT STOCKAGE"
         Me.iconButton17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -336,7 +337,7 @@ Partial Class FormMenu3
         Me.iconButton18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton18.Location = New System.Drawing.Point(0, 0)
         Me.iconButton18.Name = "iconButton18"
-        Me.iconButton18.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton18.Size = New System.Drawing.Size(197, 27)
         Me.iconButton18.TabIndex = 0
         Me.iconButton18.Text = "APPROVISIONNEMENT"
         Me.iconButton18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -347,9 +348,9 @@ Partial Class FormMenu3
         '
         Me.panelcolonne.AutoScroll = True
         Me.panelcolonne.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.panelcolonne.Controls.Add(Me.IconPictureBox1)
         Me.panelcolonne.Controls.Add(Me.IconButton6)
         Me.panelcolonne.Controls.Add(Me.Label2)
-        Me.panelcolonne.Controls.Add(Me.btcaisse)
         Me.panelcolonne.Controls.Add(Me.paneloutils)
         Me.panelcolonne.Controls.Add(Me.btnOutils)
         Me.panelcolonne.Controls.Add(Me.panelAchat)
@@ -379,9 +380,9 @@ Partial Class FormMenu3
         Me.IconButton6.IconColor = System.Drawing.Color.White
         Me.IconButton6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton6.Location = New System.Drawing.Point(0, 843)
+        Me.IconButton6.Location = New System.Drawing.Point(0, 770)
         Me.IconButton6.Name = "IconButton6"
-        Me.IconButton6.Size = New System.Drawing.Size(208, 49)
+        Me.IconButton6.Size = New System.Drawing.Size(197, 49)
         Me.IconButton6.TabIndex = 18
         Me.IconButton6.Text = "EXIT"
         Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -391,34 +392,13 @@ Partial Class FormMenu3
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Unicode", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Segoe Print", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(12, 9)
+        Me.Label2.Location = New System.Drawing.Point(12, 124)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(196, 28)
+        Me.Label2.Size = New System.Drawing.Size(166, 43)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "GMK GESTION "
-        '
-        'btcaisse
-        '
-        Me.btcaisse.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btcaisse.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btcaisse.FlatAppearance.BorderSize = 0
-        Me.btcaisse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btcaisse.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btcaisse.ForeColor = System.Drawing.Color.White
-        Me.btcaisse.IconChar = FontAwesome.Sharp.IconChar.CashRegister
-        Me.btcaisse.IconColor = System.Drawing.Color.White
-        Me.btcaisse.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btcaisse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btcaisse.Location = New System.Drawing.Point(0, 794)
-        Me.btcaisse.Name = "btcaisse"
-        Me.btcaisse.Size = New System.Drawing.Size(208, 49)
-        Me.btcaisse.TabIndex = 15
-        Me.btcaisse.Text = "CAISSE"
-        Me.btcaisse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btcaisse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btcaisse.UseVisualStyleBackColor = False
+        Me.Label2.Text = "S GESTION "
         '
         'iconButton19
         '
@@ -435,7 +415,7 @@ Partial Class FormMenu3
         Me.iconButton19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.iconButton19.Location = New System.Drawing.Point(0, 520)
         Me.iconButton19.Name = "iconButton19"
-        Me.iconButton19.Size = New System.Drawing.Size(208, 49)
+        Me.iconButton19.Size = New System.Drawing.Size(197, 49)
         Me.iconButton19.TabIndex = 7
         Me.iconButton19.Text = "ACHAT"
         Me.iconButton19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -450,7 +430,7 @@ Partial Class FormMenu3
         Me.panelVENTE.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelVENTE.Location = New System.Drawing.Point(0, 459)
         Me.panelVENTE.Name = "panelVENTE"
-        Me.panelVENTE.Size = New System.Drawing.Size(208, 61)
+        Me.panelVENTE.Size = New System.Drawing.Size(197, 61)
         Me.panelVENTE.TabIndex = 6
         '
         'iconButton11
@@ -469,7 +449,7 @@ Partial Class FormMenu3
         Me.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton11.Location = New System.Drawing.Point(0, 27)
         Me.iconButton11.Name = "iconButton11"
-        Me.iconButton11.Size = New System.Drawing.Size(208, 28)
+        Me.iconButton11.Size = New System.Drawing.Size(197, 28)
         Me.iconButton11.TabIndex = 1
         Me.iconButton11.Text = "RAPPORTS DE VENTE"
         Me.iconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -492,7 +472,7 @@ Partial Class FormMenu3
         Me.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton12.Location = New System.Drawing.Point(0, 0)
         Me.iconButton12.Name = "iconButton12"
-        Me.iconButton12.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton12.Size = New System.Drawing.Size(197, 27)
         Me.iconButton12.TabIndex = 0
         Me.iconButton12.Text = "TRANSACTION"
         Me.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -513,7 +493,7 @@ Partial Class FormMenu3
         Me.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.iconButton13.Location = New System.Drawing.Point(0, 410)
         Me.iconButton13.Name = "iconButton13"
-        Me.iconButton13.Size = New System.Drawing.Size(208, 49)
+        Me.iconButton13.Size = New System.Drawing.Size(197, 49)
         Me.iconButton13.TabIndex = 5
         Me.iconButton13.Text = "vente"
         Me.iconButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -529,7 +509,7 @@ Partial Class FormMenu3
         Me.panelProduit.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelProduit.Location = New System.Drawing.Point(0, 317)
         Me.panelProduit.Name = "panelProduit"
-        Me.panelProduit.Size = New System.Drawing.Size(208, 93)
+        Me.panelProduit.Size = New System.Drawing.Size(197, 93)
         Me.panelProduit.TabIndex = 4
         '
         'iconButton3
@@ -547,7 +527,7 @@ Partial Class FormMenu3
         Me.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.iconButton3.Location = New System.Drawing.Point(0, 0)
         Me.iconButton3.Name = "iconButton3"
-        Me.iconButton3.Size = New System.Drawing.Size(208, 27)
+        Me.iconButton3.Size = New System.Drawing.Size(197, 27)
         Me.iconButton3.TabIndex = 0
         Me.iconButton3.Text = "NOUVEAU PRODUIT"
         Me.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -591,11 +571,291 @@ Partial Class FormMenu3
         '
         'PanelMenu
         '
+        Me.PanelMenu.Controls.Add(Me.PanelMenu2)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelMenu.Location = New System.Drawing.Point(214, 52)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(926, 602)
         Me.PanelMenu.TabIndex = 9
+        '
+        'PanelMenu2
+        '
+        Me.PanelMenu2.Controls.Add(Me.PanelDashbord)
+        Me.PanelMenu2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMenu2.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMenu2.Name = "PanelMenu2"
+        Me.PanelMenu2.Size = New System.Drawing.Size(926, 602)
+        Me.PanelMenu2.TabIndex = 10
+        '
+        'PanelDashbord
+        '
+        Me.PanelDashbord.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.PanelDashbord.BackColor = System.Drawing.SystemColors.Control
+        Me.PanelDashbord.Controls.Add(Me.Guna2GroupBox4)
+        Me.PanelDashbord.Controls.Add(Me.Guna2GroupBox3)
+        Me.PanelDashbord.Controls.Add(Me.Guna2GroupBox2)
+        Me.PanelDashbord.Controls.Add(Me.Guna2GroupBox1)
+        Me.PanelDashbord.Location = New System.Drawing.Point(0, 57)
+        Me.PanelDashbord.Name = "PanelDashbord"
+        Me.PanelDashbord.Size = New System.Drawing.Size(926, 488)
+        Me.PanelDashbord.TabIndex = 2
+        '
+        'Guna2GroupBox4
+        '
+        Me.Guna2GroupBox4.BackColor = System.Drawing.SystemColors.Control
+        Me.Guna2GroupBox4.BorderRadius = 12
+        Me.Guna2GroupBox4.Controls.Add(Me.LabelClient)
+        Me.Guna2GroupBox4.Controls.Add(Me.Label9)
+        Me.Guna2GroupBox4.Controls.Add(Me.IconButton10)
+        Me.Guna2GroupBox4.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox4.FillColor = System.Drawing.Color.Cornsilk
+        Me.Guna2GroupBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2GroupBox4.Location = New System.Drawing.Point(64, 54)
+        Me.Guna2GroupBox4.Name = "Guna2GroupBox4"
+        Me.Guna2GroupBox4.ShadowDecoration.Parent = Me.Guna2GroupBox4
+        Me.Guna2GroupBox4.Size = New System.Drawing.Size(331, 154)
+        Me.Guna2GroupBox4.TabIndex = 4
+        '
+        'LabelClient
+        '
+        Me.LabelClient.AutoSize = True
+        Me.LabelClient.BackColor = System.Drawing.Color.Transparent
+        Me.LabelClient.Font = New System.Drawing.Font("Lucida Sans Unicode", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelClient.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.LabelClient.Location = New System.Drawing.Point(141, 62)
+        Me.LabelClient.Name = "LabelClient"
+        Me.LabelClient.Size = New System.Drawing.Size(28, 28)
+        Me.LabelClient.TabIndex = 3
+        Me.LabelClient.Text = "0"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label9.Location = New System.Drawing.Point(88, 12)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(165, 17)
+        Me.Label9.TabIndex = 2
+        Me.Label9.Text = "NOMBRE DES CLIENT"
+        '
+        'IconButton10
+        '
+        Me.IconButton10.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.IconButton10.BackColor = System.Drawing.Color.Transparent
+        Me.IconButton10.FlatAppearance.BorderSize = 0
+        Me.IconButton10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IconButton10.ForeColor = System.Drawing.Color.Black
+        Me.IconButton10.IconChar = FontAwesome.Sharp.IconChar.AngleDown
+        Me.IconButton10.IconColor = System.Drawing.SystemColors.Desktop
+        Me.IconButton10.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton10.IconSize = 30
+        Me.IconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.IconButton10.Location = New System.Drawing.Point(3, 122)
+        Me.IconButton10.Name = "IconButton10"
+        Me.IconButton10.Size = New System.Drawing.Size(325, 27)
+        Me.IconButton10.TabIndex = 2
+        Me.IconButton10.Text = "VOIR PLUS"
+        Me.IconButton10.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.IconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        Me.IconButton10.UseVisualStyleBackColor = False
+        '
+        'Guna2GroupBox3
+        '
+        Me.Guna2GroupBox3.BackColor = System.Drawing.SystemColors.Control
+        Me.Guna2GroupBox3.BorderRadius = 12
+        Me.Guna2GroupBox3.Controls.Add(Me.LabelProduit)
+        Me.Guna2GroupBox3.Controls.Add(Me.Label7)
+        Me.Guna2GroupBox3.Controls.Add(Me.IconButton9)
+        Me.Guna2GroupBox3.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox3.FillColor = System.Drawing.Color.PeachPuff
+        Me.Guna2GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2GroupBox3.Location = New System.Drawing.Point(64, 299)
+        Me.Guna2GroupBox3.Name = "Guna2GroupBox3"
+        Me.Guna2GroupBox3.ShadowDecoration.Parent = Me.Guna2GroupBox3
+        Me.Guna2GroupBox3.Size = New System.Drawing.Size(334, 160)
+        Me.Guna2GroupBox3.TabIndex = 4
+        '
+        'LabelProduit
+        '
+        Me.LabelProduit.AutoSize = True
+        Me.LabelProduit.BackColor = System.Drawing.Color.Transparent
+        Me.LabelProduit.Font = New System.Drawing.Font("Lucida Sans Unicode", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelProduit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.LabelProduit.Location = New System.Drawing.Point(141, 63)
+        Me.LabelProduit.Name = "LabelProduit"
+        Me.LabelProduit.Size = New System.Drawing.Size(28, 28)
+        Me.LabelProduit.TabIndex = 3
+        Me.LabelProduit.Text = "0"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label7.Location = New System.Drawing.Point(88, 12)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(158, 17)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "PRODUIT EN STOCK"
+        '
+        'IconButton9
+        '
+        Me.IconButton9.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.IconButton9.BackColor = System.Drawing.Color.Transparent
+        Me.IconButton9.FlatAppearance.BorderSize = 0
+        Me.IconButton9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IconButton9.ForeColor = System.Drawing.Color.Black
+        Me.IconButton9.IconChar = FontAwesome.Sharp.IconChar.AngleDown
+        Me.IconButton9.IconColor = System.Drawing.SystemColors.Desktop
+        Me.IconButton9.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton9.IconSize = 30
+        Me.IconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.IconButton9.Location = New System.Drawing.Point(3, 128)
+        Me.IconButton9.Name = "IconButton9"
+        Me.IconButton9.Size = New System.Drawing.Size(328, 27)
+        Me.IconButton9.TabIndex = 2
+        Me.IconButton9.Text = "VOIR PLUS"
+        Me.IconButton9.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.IconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        Me.IconButton9.UseVisualStyleBackColor = False
+        '
+        'Guna2GroupBox2
+        '
+        Me.Guna2GroupBox2.BackColor = System.Drawing.SystemColors.Control
+        Me.Guna2GroupBox2.BorderRadius = 12
+        Me.Guna2GroupBox2.Controls.Add(Me.LabelRutute)
+        Me.Guna2GroupBox2.Controls.Add(Me.Label5)
+        Me.Guna2GroupBox2.Controls.Add(Me.IconButton8)
+        Me.Guna2GroupBox2.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox2.FillColor = System.Drawing.Color.SkyBlue
+        Me.Guna2GroupBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2GroupBox2.Location = New System.Drawing.Point(539, 53)
+        Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
+        Me.Guna2GroupBox2.ShadowDecoration.Parent = Me.Guna2GroupBox2
+        Me.Guna2GroupBox2.Size = New System.Drawing.Size(334, 154)
+        Me.Guna2GroupBox2.TabIndex = 4
+        '
+        'LabelRutute
+        '
+        Me.LabelRutute.AutoSize = True
+        Me.LabelRutute.BackColor = System.Drawing.Color.Transparent
+        Me.LabelRutute.Font = New System.Drawing.Font("Lucida Sans Unicode", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelRutute.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.LabelRutute.Location = New System.Drawing.Point(141, 62)
+        Me.LabelRutute.Name = "LabelRutute"
+        Me.LabelRutute.Size = New System.Drawing.Size(28, 28)
+        Me.LabelRutute.TabIndex = 3
+        Me.LabelRutute.Text = "0"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label5.Location = New System.Drawing.Point(53, 7)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(258, 17)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "PRODUIT EN RUPTURE DE STOCK"
+        '
+        'IconButton8
+        '
+        Me.IconButton8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.IconButton8.BackColor = System.Drawing.Color.Transparent
+        Me.IconButton8.FlatAppearance.BorderSize = 0
+        Me.IconButton8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IconButton8.ForeColor = System.Drawing.Color.Black
+        Me.IconButton8.IconChar = FontAwesome.Sharp.IconChar.AngleDown
+        Me.IconButton8.IconColor = System.Drawing.SystemColors.Desktop
+        Me.IconButton8.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton8.IconSize = 30
+        Me.IconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.IconButton8.Location = New System.Drawing.Point(3, 122)
+        Me.IconButton8.Name = "IconButton8"
+        Me.IconButton8.Size = New System.Drawing.Size(328, 27)
+        Me.IconButton8.TabIndex = 2
+        Me.IconButton8.Text = "VOIR PLUS"
+        Me.IconButton8.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.IconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        Me.IconButton8.UseVisualStyleBackColor = False
+        '
+        'Guna2GroupBox1
+        '
+        Me.Guna2GroupBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.Guna2GroupBox1.BorderRadius = 12
+        Me.Guna2GroupBox1.Controls.Add(Me.Label1)
+        Me.Guna2GroupBox1.Controls.Add(Me.IconButton7)
+        Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox1.FillColor = System.Drawing.Color.Turquoise
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(536, 301)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.ShadowDecoration.Parent = Me.Guna2GroupBox1
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(334, 154)
+        Me.Guna2GroupBox1.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Location = New System.Drawing.Point(74, 32)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(195, 17)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "RAPPORT TRANSACTION"
+        '
+        'IconButton7
+        '
+        Me.IconButton7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.IconButton7.BackColor = System.Drawing.Color.Transparent
+        Me.IconButton7.FlatAppearance.BorderSize = 0
+        Me.IconButton7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IconButton7.ForeColor = System.Drawing.Color.Black
+        Me.IconButton7.IconChar = FontAwesome.Sharp.IconChar.AngleDown
+        Me.IconButton7.IconColor = System.Drawing.SystemColors.Desktop
+        Me.IconButton7.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton7.IconSize = 30
+        Me.IconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.IconButton7.Location = New System.Drawing.Point(3, 122)
+        Me.IconButton7.Name = "IconButton7"
+        Me.IconButton7.Size = New System.Drawing.Size(328, 27)
+        Me.IconButton7.TabIndex = 2
+        Me.IconButton7.Text = "VOIR PLUS"
+        Me.IconButton7.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.IconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        Me.IconButton7.UseVisualStyleBackColor = False
+        '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.IconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Shopify
+        Me.IconPictureBox1.IconColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox1.IconSize = 124
+        Me.IconPictureBox1.Location = New System.Drawing.Point(8, 12)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(179, 124)
+        Me.IconPictureBox1.TabIndex = 19
+        Me.IconPictureBox1.TabStop = False
         '
         'FormMenu3
         '
@@ -605,8 +865,9 @@ Partial Class FormMenu3
         Me.Controls.Add(Me.PanelMenu)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelcolonne)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormMenu3"
-        Me.Text = "FormMenu3"
+        Me.Text = "GMK GESTION"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.paneloutils.ResumeLayout(False)
@@ -618,6 +879,18 @@ Partial Class FormMenu3
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelMenu.ResumeLayout(False)
+        Me.PanelMenu2.ResumeLayout(False)
+        Me.PanelDashbord.ResumeLayout(False)
+        Me.Guna2GroupBox4.ResumeLayout(False)
+        Me.Guna2GroupBox4.PerformLayout()
+        Me.Guna2GroupBox3.ResumeLayout(False)
+        Me.Guna2GroupBox3.PerformLayout()
+        Me.Guna2GroupBox2.ResumeLayout(False)
+        Me.Guna2GroupBox2.PerformLayout()
+        Me.Guna2GroupBox1.ResumeLayout(False)
+        Me.Guna2GroupBox1.PerformLayout()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -626,7 +899,6 @@ Partial Class FormMenu3
     Private WithEvents iconButton2 As FontAwesome.Sharp.IconButton
     Private WithEvents iconButton5 As FontAwesome.Sharp.IconButton
     Private WithEvents iconButton4 As FontAwesome.Sharp.IconButton
-    Private WithEvents iconButton30 As FontAwesome.Sharp.IconButton
     Private WithEvents iconButton31 As FontAwesome.Sharp.IconButton
     Private WithEvents iconButton32 As FontAwesome.Sharp.IconButton
     Private WithEvents paneloutils As Panel
@@ -643,11 +915,28 @@ Partial Class FormMenu3
     Private WithEvents iconButton13 As FontAwesome.Sharp.IconButton
     Private WithEvents panelProduit As Panel
     Private WithEvents iconButton3 As FontAwesome.Sharp.IconButton
-    Private WithEvents btcaisse As FontAwesome.Sharp.IconButton
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents PanelMenu As Panel
-    Friend WithEvents LabelTitre As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents IconPictureBox2 As FontAwesome.Sharp.IconPictureBox
     Private WithEvents IconButton6 As FontAwesome.Sharp.IconButton
+    Public WithEvents PanelMenu As Panel
+    Friend WithEvents LabelTitre As Label
+    Public WithEvents PanelMenu2 As Panel
+    Friend WithEvents PanelDashbord As Panel
+    Friend WithEvents Guna2GroupBox4 As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents LabelClient As Label
+    Friend WithEvents Label9 As Label
+    Private WithEvents IconButton10 As FontAwesome.Sharp.IconButton
+    Friend WithEvents Guna2GroupBox3 As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents LabelProduit As Label
+    Friend WithEvents Label7 As Label
+    Private WithEvents IconButton9 As FontAwesome.Sharp.IconButton
+    Friend WithEvents Guna2GroupBox2 As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents LabelRutute As Label
+    Friend WithEvents Label5 As Label
+    Private WithEvents IconButton8 As FontAwesome.Sharp.IconButton
+    Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents Label1 As Label
+    Private WithEvents IconButton7 As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
 End Class

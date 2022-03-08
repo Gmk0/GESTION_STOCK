@@ -1,6 +1,7 @@
 ﻿Public Class FormHistoValeur
     Private valeurController As New ValeurController()
     Private controlProduit As New produitController
+    Private otherControl As New AutresControl
     Private Table As DataTable
     Private ID As String
 
@@ -20,6 +21,8 @@
     Private Sub chargementElement()
         valeurController.showValeur(DatagridCom)
         controlProduit.ChargementProduit(comboProduit)
+        otherControl.AjoutButtonn(DatagridCom)
+
     End Sub
     Public Sub chargmentElemetId()
         Table = controlProduit.chargementID(comboProduit)
@@ -87,7 +90,7 @@
     End Sub
 
     Private Sub DatagridCom_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DatagridCom.CellContentDoubleClick
-        If e.RowIndex >= 0 Then
+        If e.RowIndex >= 0 AndAlso e.ColumnIndex = DatagridCom.Columns("MODIFICATION").Index Then
             Dim row As DataGridViewRow = New DataGridViewRow
             row = DatagridCom.Rows(e.RowIndex)
             ID = row.Cells("id").Value.ToString()
@@ -101,9 +104,7 @@
 
         End If
     End Sub
-    Sub blocageButton()
 
-    End Sub
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
         chargementElement()

@@ -24,7 +24,7 @@ Partial Class FormDashbord
     Private Sub InitializeComponent()
         Me.PanelDashbord = New System.Windows.Forms.Panel()
         Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.LabelClient = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.IconButton10 = New FontAwesome.Sharp.IconButton()
         Me.Guna2GroupBox3 = New Guna.UI2.WinForms.Guna2GroupBox()
@@ -63,7 +63,7 @@ Partial Class FormDashbord
         '
         Me.Guna2GroupBox4.BackColor = System.Drawing.SystemColors.Control
         Me.Guna2GroupBox4.BorderRadius = 12
-        Me.Guna2GroupBox4.Controls.Add(Me.Label8)
+        Me.Guna2GroupBox4.Controls.Add(Me.LabelClient)
         Me.Guna2GroupBox4.Controls.Add(Me.Label9)
         Me.Guna2GroupBox4.Controls.Add(Me.IconButton10)
         Me.Guna2GroupBox4.CustomBorderThickness = New System.Windows.Forms.Padding(0)
@@ -76,17 +76,17 @@ Partial Class FormDashbord
         Me.Guna2GroupBox4.Size = New System.Drawing.Size(331, 154)
         Me.Guna2GroupBox4.TabIndex = 4
         '
-        'Label8
+        'LabelClient
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Lucida Sans Unicode", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label8.Location = New System.Drawing.Point(141, 62)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(28, 28)
-        Me.Label8.TabIndex = 3
-        Me.Label8.Text = "0"
+        Me.LabelClient.AutoSize = True
+        Me.LabelClient.BackColor = System.Drawing.Color.Transparent
+        Me.LabelClient.Font = New System.Drawing.Font("Lucida Sans Unicode", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelClient.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.LabelClient.Location = New System.Drawing.Point(141, 62)
+        Me.LabelClient.Name = "LabelClient"
+        Me.LabelClient.Size = New System.Drawing.Size(28, 28)
+        Me.LabelClient.TabIndex = 3
+        Me.LabelClient.Text = "0"
         '
         'Label9
         '
@@ -338,7 +338,7 @@ Partial Class FormDashbord
 
     Friend WithEvents PanelDashbord As Panel
     Friend WithEvents Guna2GroupBox4 As Guna.UI2.WinForms.Guna2GroupBox
-    Friend WithEvents Label8 As Label
+    Friend WithEvents LabelClient As Label
     Friend WithEvents Label9 As Label
     Private WithEvents IconButton10 As FontAwesome.Sharp.IconButton
     Friend WithEvents Guna2GroupBox3 As Guna.UI2.WinForms.Guna2GroupBox

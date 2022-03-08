@@ -45,6 +45,24 @@ Public Class ClientManger
         End Try
 
     End Function
+
+    Public Function ShowClientCount() As DataTable
+
+        Try
+            requete = "SELECT count(*) FROM DescClient"
+            command = New SqlCommand(requete, GetConnection)
+            adapter = New SqlDataAdapter(command)
+            table = New DataTable()
+            adapter.Fill(table)
+            Return table
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+
+    End Function
+
     Public Function UpdateClient(ByVal clientC As GET_CLIENT)
         Try
             requete = "updateClient"
@@ -117,6 +135,41 @@ Public Class ClientManger
 
         Try
             requete = "SELECT id FROM DescClient where NAME='" + client.getName() + "'"
+            command = New SqlCommand(requete, GetConnection)
+            adapter = New SqlDataAdapter(command)
+            table = New DataTable()
+            adapter.Fill(table)
+            Return table
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+
+    End Function
+    ''
+
+    Public Function ShowProduitCount() As DataTable
+
+        Try
+            requete = "SELECT count(*) FROM DescProduit"
+            command = New SqlCommand(requete, GetConnection)
+            adapter = New SqlDataAdapter(command)
+            table = New DataTable()
+            adapter.Fill(table)
+            Return table
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+
+    End Function
+
+    Public Function ShowProduitCountRupture() As DataTable
+
+        Try
+            requete = "SELECT count(*) FROM histostockTot where reste < 10"
             command = New SqlCommand(requete, GetConnection)
             adapter = New SqlDataAdapter(command)
             table = New DataTable()

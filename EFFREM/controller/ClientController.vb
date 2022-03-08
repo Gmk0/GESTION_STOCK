@@ -95,4 +95,20 @@
 
     End Function
 
+    Public Function chargementClientCount()
+        Try
+
+            table = loacalManager.ShowClientCount()
+            Return table.Rows(0)(0)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+
+        End Try
+
+    End Function
+
+
+
+
 End Class

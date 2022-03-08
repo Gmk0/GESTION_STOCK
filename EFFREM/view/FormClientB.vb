@@ -2,15 +2,15 @@
     Public controlClient As New ClientController
     Public controlCommune As New CommunController
     Public id As String
-    Private idB As String
+
     Private table As DataTable
     Private Sub FormClientB_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         chargementElement()
     End Sub
 
     Private Sub btnAjouter_Click(sender As Object, e As EventArgs) Handles btnAjouter.Click
-        Dim IdCom As String = idB
-        controlClient.insertionClient(boxName.Text, boxGsm.Text, IdCom)
+
+        controlClient.insertionClient(boxName.Text, boxGsm.Text, boxC.Text)
         clean()
 
     End Sub

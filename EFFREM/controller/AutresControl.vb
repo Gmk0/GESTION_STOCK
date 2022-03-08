@@ -1,5 +1,8 @@
 ﻿Imports System.Windows.Forms
 Public Class AutresControl
+    Private table As DataTable
+    Private loacalManager As New ClientManger
+
     Public Sub AjoutButtonn(ByVal datagrid As DataGridView)
         With datagrid.Columns
             Dim btn As New DataGridViewButtonColumn
@@ -19,7 +22,7 @@ Public Class AutresControl
 
     Private activeForm As Form = Nothing
     ' Private cursor As Cursor
-    Public Sub showMenu(ByRef childForm As Form, ByRef panelMenu As Panel)
+    Public Sub showMenu(ByRef childForm As Form, ByVal panelMenu As Panel)
 
 
         If activeForm IsNot Nothing Then
@@ -34,8 +37,43 @@ Public Class AutresControl
         panelMenu.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
-
-
-
     End Sub
+
+    Public Function chargementClientCount()
+        Try
+
+            table = loacalManager.ShowClientCount()
+            Return table.Rows(0)(0)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+
+        End Try
+
+    End Function
+    Public Function chargementProduitCount()
+        Try
+
+            table = loacalManager.ShowProduitCount()
+            Return table.Rows(0)(0)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+
+        End Try
+
+    End Function
+    Public Function chargementStockRCount()
+        Try
+
+            table = loacalManager.ShowProduitCountRupture()
+            Return table.Rows(0)(0)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+
+        End Try
+
+    End Function
+
 End Class

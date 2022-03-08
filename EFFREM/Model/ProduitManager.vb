@@ -136,8 +136,9 @@ Public Class ProduitManager
     Public Function ShowIdProduitByName(ByVal GetP As GET_Produit) As DataTable
 
         Try
-            requete = "SELECT name FROM DescProduit where id='" + GetP.getIdproduit + "'"
+            requete = "SELECT name FROM DescProduit where id=@id"
             command = New SqlCommand(requete, GetConnection)
+            command.Parameters.AddWithValue("@id", GetP.getIdproduit)
             adapter = New SqlDataAdapter(command)
             table = New DataTable()
             adapter.Fill(table)
@@ -170,8 +171,9 @@ Public Class ProduitManager
     Public Function ShowCategorie(ByVal GetP As GET_Produit) As DataTable
 
         Try
-            requete = "SELECT num FROM EnumCategories where name='" + GetP.getCategorie + "'"
+            requete = "SELECT num FROM EnumCategories where name=@name"
             command = New SqlCommand(requete, GetConnection)
+            command.Parameters.AddWithValue("@name", GetP.getCategorie)
             adapter = New SqlDataAdapter(command)
             table = New DataTable()
             adapter.Fill(table)

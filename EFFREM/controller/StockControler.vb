@@ -35,10 +35,10 @@
                     stockManager.insertionStock(GetClient)
                     i += 1
                 End While
-                MsgBox("le stock a ete bien inserer", MsgBoxStyle.Exclamation)
+                MsgBox("le stock a ete bien inserer", MsgBoxStyle.Information)
 
             Else
-                MsgBox("la listes de stock est vide", MsgBoxStyle.Exclamation)
+                MsgBox("la liste de stock est vide", MsgBoxStyle.Exclamation)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
