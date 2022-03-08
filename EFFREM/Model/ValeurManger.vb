@@ -123,11 +123,7 @@ Public Class ValeurManger
     End Function
 
 
-    Public Function ShowValeurId(ByVal GetValeur As GET_Valeur) As DataTable
 
-
-
-    End Function
 
 
 End Class
